@@ -1,23 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { useQuery } from "@tanstack/react-query";
-import { supabase } from "@/integrations/supabase/client";
 import { useTranslation } from 'react-i18next';
 
 const Contact = () => {
   const { t } = useTranslation();
-  const { data: openingHours = [], isLoading } = useQuery({
-    queryKey: ['opening-hours'],
-    queryFn: async () => {
-      const { data, error } = await supabase
-        .from('opening_hours')
-        .select('*')
-        .order('date', { ascending: true });
-
-      if (error) throw error;
-      return data;
-    },
-  });
+  
+  // Static opening hours data
+  const openingHours = [
+    { id: 1, day: 'Sunday', time: '10:00 AM - 1:00 PM' },
+    { id: 2, day: 'Wednesday', time: '7:00 PM - 9:00 PM' },
+    { id: 3, day: 'Saturday', time: '9:00 AM - 11:00 AM' },
+  ];
 
   return (
     <section id="contact" className="py-20 px-4 bg-background">
@@ -84,21 +77,15 @@ const Contact = () => {
               </h3>
             </div>
             <div className="space-y-3">
-              {isLoading ? (
-                <p className="text-muted-foreground">Loading...</p>
-              ) : openingHours.length === 0 ? (
-                <p className="text-muted-foreground">No opening hours available</p>
-              ) : (
-                openingHours.map((hour) => (
-                  <div
-                    key={hour.id}
-                    className="flex justify-between items-center py-2 border-b border-border last:border-0"
-                  >
-                    <span className="font-medium text-card-foreground">{hour.day}</span>
-                    <span className="text-muted-foreground">{hour.time}</span>
-                  </div>
-                ))
-              )}
+              {openingHours.map((hour) => (
+                <div
+                  key={hour.id}
+                  className="flex justify-between items-center py-2 border-b border-border last:border-0"
+                >
+                  <span className="font-medium text-card-foreground">{hour.day}</span>
+                  <span className="text-muted-foreground">{hour.time}</span>
+                </div>
+              ))}
             </div>
           </Card>
         </div>
