@@ -39,23 +39,23 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative h-screen flex items-center justify-center overflow-hidden">
+    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 35px)' }}>
       <Carousel
         setApi={setApi}
         opts={{
           loop: true,
           align: "start",
         }}
-        className="absolute inset-0 w-full h-full"
+        className="absolute inset-0 w-full" style={{ height: 'calc(100vh - 35px)' }}
       >
-        <CarouselContent className="h-screen ml-0">
+        <CarouselContent className="ml-0" style={{ height: 'calc(100vh - 35px)' }}>
           {heroImages.map((image, index) => (
-            <CarouselItem key={index} className="h-screen pl-0 basis-full">
+            <CarouselItem key={index} className="pl-0 basis-full" style={{ height: 'calc(100vh - 35px)' }}>
               <div
                 className="w-full h-full bg-cover bg-top"
                 style={{ backgroundImage: `url(${image})` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+                <div className={`absolute inset-0 ${index === 0 ? 'bg-gradient-to-b from-black/25 via-black/20 to-black/30' : 'bg-gradient-to-b from-black/40 via-black/30 to-black/50'}`} />
               </div>
             </CarouselItem>
           ))}
