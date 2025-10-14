@@ -45,7 +45,6 @@ const Hero = () => {
         opts={{
           loop: true,
           align: "start",
-          containScroll: false
         }}
         className="absolute inset-0 w-full h-full"
       >
