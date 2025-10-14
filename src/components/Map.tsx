@@ -1,39 +1,11 @@
 import { useLoadScript, GoogleMap, Marker } from '@react-google-maps/api';
-import { useState, useEffect } from 'react';
-import { supabase } from '@/integrations/supabase/client';
 import { useTranslation } from 'react-i18next';
 
 const Map = () => {
   const { t } = useTranslation();
-  const [apiKey, setApiKey] = useState<string | null>(null);
-  const [isLoadingKey, setIsLoadingKey] = useState(true);
-
-  useEffect(() => {
-    const fetchApiKey = async () => {
-      try {
-        const { data, error } = await supabase.functions.invoke('get-maps-key');
-
-        if (error) {
-          console.error('Error fetching API key:', error);
-          setIsLoadingKey(false);
-          return;
-        }
-
-        if (data?.apiKey) {
-          setApiKey(data.apiKey);
-        }
-      } catch (err) {
-        console.error('Error:', err);
-      } finally {
-        setIsLoadingKey(false);
-      }
-    };
-
-    fetchApiKey();
-  }, []);
 
   const { isLoaded, loadError } = useLoadScript({
-    googleMapsApiKey: apiKey || '',
+    googleMapsApiKey: 'AIzaSyCM8f5iAhQ1elA8ZsDW1IkEBqWAor8FHoo',
     id: 'google-map-script',
   });
 
@@ -42,18 +14,6 @@ const Map = () => {
     lng: 25.071342
   };
 
-  if (isLoadingKey || !apiKey) {
-    return (
-      <section className="py-20 px-4 bg-background">
-        <div className="max-w-6xl mx-auto text-center">
-          <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            {t('map.title')}
-          </h2>
-          <p className="text-muted-foreground">{t('map.loading')}</p>
-        </div>
-      </section>
-    );
-  }
 
   if (loadError) {
     return (
