@@ -62,14 +62,14 @@ const Hero = () => {
         </CarouselContent>
       </Carousel>
 
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto flex flex-col items-center justify-center h-full py-8 md:py-20">
-        <h1 className="text-3xl md:text-6xl font-bold mb-4 md:mb-6 drop-shadow-lg">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+        <h1 className="text-2xl md:text-6xl font-bold mb-3 md:mb-6 drop-shadow-lg">
           Welcome to Our Church
         </h1>
-        <p className="text-lg md:text-2xl mb-6 md:mb-8 drop-shadow-md">
+        <p className="text-base md:text-2xl mb-4 md:mb-8 drop-shadow-md">
           Join us in worship and fellowship
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center mb-16 md:mb-12">
+        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
           <Button
             onClick={() => scrollToSection('about')}
             size="lg"
