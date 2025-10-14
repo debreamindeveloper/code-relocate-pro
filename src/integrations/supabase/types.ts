@@ -14,7 +14,72 @@ export type Database = {
   }
   public: {
     Tables: {
-      [_ in never]: never
+      events: {
+        Row: {
+          created_at: string | null
+          description: string | null
+          event_date: string
+          id: string
+          location: string | null
+          title: string
+          updated_at: string | null
+        }
+        Insert: {
+          created_at?: string | null
+          description?: string | null
+          event_date: string
+          id?: string
+          location?: string | null
+          title: string
+          updated_at?: string | null
+        }
+        Update: {
+          created_at?: string | null
+          description?: string | null
+          event_date?: string
+          id?: string
+          location?: string | null
+          title?: string
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
+      opening_hours: {
+        Row: {
+          close_time: string | null
+          created_at: string | null
+          day_name: string
+          day_of_week: number
+          id: string
+          is_closed: boolean | null
+          notes: string | null
+          open_time: string | null
+          updated_at: string | null
+        }
+        Insert: {
+          close_time?: string | null
+          created_at?: string | null
+          day_name: string
+          day_of_week: number
+          id?: string
+          is_closed?: boolean | null
+          notes?: string | null
+          open_time?: string | null
+          updated_at?: string | null
+        }
+        Update: {
+          close_time?: string | null
+          created_at?: string | null
+          day_name?: string
+          day_of_week?: number
+          id?: string
+          is_closed?: boolean | null
+          notes?: string | null
+          open_time?: string | null
+          updated_at?: string | null
+        }
+        Relationships: []
+      }
     }
     Views: {
       [_ in never]: never
