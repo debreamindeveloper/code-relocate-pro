@@ -39,7 +39,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden h-[calc(100vh-80px)] md:h-[calc(100vh-175px)]">
+    <section className="relative flex items-center justify-center overflow-hidden h-screen lg:h-[calc(100vh-175px)]">
       <Carousel
         setApi={setApi}
         opts={{
