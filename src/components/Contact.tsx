@@ -1,16 +1,25 @@
 import { Card } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
 import { useTranslation } from 'react-i18next';
+import { useQuery } from '@tanstack/react-query';
+import { supabase } from '@/integrations/supabase/client';
+import { Skeleton } from '@/components/ui/skeleton';
 
 const Contact = () => {
   const { t } = useTranslation();
   
-  // Static opening hours data
-  const openingHours = [
-    { id: 1, day: 'Sunday', time: '10:00 AM - 1:00 PM' },
-    { id: 2, day: 'Wednesday', time: '7:00 PM - 9:00 PM' },
-    { id: 3, day: 'Saturday', time: '9:00 AM - 11:00 AM' },
-  ];
+  const { data: openingHours, isLoading } = useQuery({
+    queryKey: ['opening_hours'],
+    queryFn: async () => {
+      const { data, error } = await supabase
+        .from('opening_hours')
+        .select('*')
+        .order('day_of_week', { ascending: true });
+      
+      if (error) throw error;
+      return data;
+    },
+  });
 
   return (
     <section id="contact" className="py-20 px-4 bg-background">
@@ -76,17 +85,23 @@ const Contact = () => {
                 {t('contact.openingHours')}
               </h3>
             </div>
-            <div className="space-y-3">
-              {openingHours.map((hour) => (
-                <div
-                  key={hour.id}
-                  className="flex justify-between items-center py-2 border-b border-border last:border-0"
-                >
-                  <span className="font-medium text-card-foreground">{hour.day}</span>
-                  <span className="text-muted-foreground">{hour.time}</span>
-                </div>
-              ))}
-            </div>
+            {isLoading ? (
+              <Skeleton className="h-64 w-full" />
+            ) : (
+              <div className="space-y-3">
+                {openingHours?.map((hour) => (
+                  <div
+                    key={hour.id}
+                    className="flex justify-between items-center py-2 border-b border-border last:border-0"
+                  >
+                    <span className="font-medium text-card-foreground">{hour.day_name}</span>
+                    <span className="text-muted-foreground">
+                      {hour.is_closed ? 'Closed' : `${hour.open_time?.slice(0, 5)} - ${hour.close_time?.slice(0, 5)}`}
+                    </span>
+                  </div>
+                ))}
+              </div>
+            )}
           </Card>
         </div>
       </div>
