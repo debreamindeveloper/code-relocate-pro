@@ -63,25 +63,25 @@ const Hero = () => {
       </Carousel>
 
       <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto flex flex-col items-center justify-center h-full">
-        <h1 className="text-2xl md:text-6xl font-bold mb-3 md:mb-6 drop-shadow-lg">
+        <h1 className="text-xl md:text-6xl font-bold mb-2 md:mb-6 drop-shadow-lg">
           Welcome to Our Church
         </h1>
-        <p className="text-base md:text-2xl mb-4 md:mb-8 drop-shadow-md">
+        <p className="text-sm md:text-2xl mb-3 md:mb-8 drop-shadow-md">
           Join us in worship and fellowship
         </p>
-        <div className="flex flex-col sm:flex-row gap-3 md:gap-4 justify-center">
+        <div className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center">
           <Button
             onClick={() => scrollToSection('about')}
-            size="lg"
-            className="bg-secondary text-secondary-foreground hover:bg-secondary/90"
+            size="sm"
+            className="bg-secondary text-secondary-foreground hover:bg-secondary/90 md:h-11 md:px-8"
           >
             Learn More
           </Button>
           <Button
             onClick={() => scrollToSection('contact')}
-            size="lg"
+            size="sm"
             variant="outline"
-            className="bg-white/10 text-white border-white/20 hover:bg-white/20"
+            className="bg-white/10 text-white border-white/20 hover:bg-white/20 md:h-11 md:px-8"
           >
             Visit Us
           </Button>
