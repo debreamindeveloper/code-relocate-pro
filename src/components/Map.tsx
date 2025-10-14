@@ -37,8 +37,11 @@ const Map = () => {
     id: 'google-map-script',
   });
 
+  // Don't load Google Maps until we have the API key
+  const shouldLoadMap = !isLoadingKey && apiKey;
 
-  if (isLoadingKey || !apiKey) {
+
+  if (!shouldLoadMap) {
     return (
       <section className="py-20 bg-background">
         <div className="max-w-6xl mx-auto px-4 text-center">
