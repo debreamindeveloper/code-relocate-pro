@@ -1,0 +1,61 @@
+{
+  "header": {
+    "home": "Etusivu",
+    "about": "Tietoa meistä",
+    "services": "Palvelut",
+    "events": "Tapahtumat",
+    "contact": "Yhteystiedot"
+  },
+  "hero": {
+    "title": "Tervetuloa Pyhän Teklehaimanotin Etiopian ortodoksiseen Tewahedo-kirkkoon",
+    "subtitle": "Liity meihin palvomaan ja yhteisöön"
+  },
+  "services": {
+    "title": "Palvelumme",
+    "subtitle": "Löydä erilaisia tapoja yhdistyä ja kasvaa uskossa",
+    "sundayWorship": {
+      "title": "Sunnuntaipalvelus",
+      "description": "Liity meihin joka sunnuntai inspiroivaan palvontaan ja voimakkaaseen opetukseen"
+    },
+    "youthMinistry": {
+      "title": "Nuorisotyö",
+      "description": "Valtuuttamalla seuraavaa sukupolvea uskon ja yhteisön kautta"
+    },
+    "bibleStudy": {
+      "title": "Raamattututkistelu",
+      "description": "Kasva syvemmälle Jumalan Sanassa viikoittaisten tutkimusryhmien kautta"
+    },
+    "choir": {
+      "title": "Kuoro",
+      "description": "Nosta äänesi ylistykseen ja palvontaan kuoromme kanssa"
+    },
+    "childrens": {
+      "title": "Lastentyö",
+      "description": "Hauskoja ja kiinnostavia Raamatun oppitunteja kaikenikäisille lapsille"
+    },
+    "prayer": {
+      "title": "Rukouskokoukset",
+      "description": "Liity meihin voimakkaaseen yhteiseen rukoukseen"
+    }
+  },
+  "events": {
+    "title": "Tulevat tapahtumat",
+    "subtitle": "Älä missaa mitä tapahtuu",
+    "loading": "Ladataan tapahtumia...",
+    "noEvents": "Ei tulevia tapahtumia tällä hetkellä"
+  },
+  "map": {
+    "title": "Käy meillä",
+    "loading": "Ladataan karttaa...",
+    "error": "Kartan lataaminen epäonnistui"
+  },
+  "contact": {
+    "mainTitle": "Ota yhteyttä",
+    "title": "Yhteystiedot",
+    "address": "Osoite",
+    "phone": "Puhelin",
+    "email": "Sähköposti",
+    "verse": "Sillä missä kaksi tai kolme on koolla minun nimessäni, siellä minä olen heidän keskellään. - Matteus 18:20",
+    "openingHours": "Aukioloajat"
+  }
+}

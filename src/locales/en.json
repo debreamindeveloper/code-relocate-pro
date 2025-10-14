@@ -1,0 +1,61 @@
+{
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Ministries",
+    "events": "Events",
+    "contact": "Contact"
+  },
+  "hero": {
+    "title": "Welcome to Saint Teklehaimanot Ethiopian Orthodox Tewahedo Church",
+    "subtitle": "Join us in worship and fellowship"
+  },
+  "services": {
+    "title": "Our Ministries",
+    "subtitle": "Discover the various ways you can connect and grow in faith",
+    "sundayWorship": {
+      "title": "Sunday Worship",
+      "description": "Join us every Sunday for inspiring worship and powerful teaching"
+    },
+    "youthMinistry": {
+      "title": "Youth Ministry",
+      "description": "Empowering the next generation through faith and fellowship"
+    },
+    "bibleStudy": {
+      "title": "Bible Study",
+      "description": "Grow deeper in God's Word through weekly study groups"
+    },
+    "choir": {
+      "title": "Worship Choir",
+      "description": "Lift your voice in praise and worship with our choir"
+    },
+    "childrens": {
+      "title": "Children's Ministry",
+      "description": "Fun and engaging Bible lessons for kids of all ages"
+    },
+    "prayer": {
+      "title": "Prayer Meetings",
+      "description": "Join us in powerful corporate prayer"
+    }
+  },
+  "events": {
+    "title": "Upcoming Events",
+    "subtitle": "Don't miss what's happening",
+    "loading": "Loading events...",
+    "noEvents": "No upcoming events at this time"
+  },
+  "map": {
+    "title": "Visit Us",
+    "loading": "Loading map...",
+    "error": "Unable to load map"
+  },
+  "contact": {
+    "mainTitle": "Get In Touch",
+    "title": "Contact Information",
+    "address": "Address",
+    "phone": "Phone",
+    "email": "Email",
+    "verse": "For where two or three gather in my name, there am I with them. - Matthew 18:20",
+    "openingHours": "Opening Hours"
+  }
+}
