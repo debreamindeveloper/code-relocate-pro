@@ -70,7 +70,7 @@ const Hero = () => {
           <p className="text-sm md:text-2xl mb-3 md:mb-8 drop-shadow-md">
             Join us in worship and fellowship
           </p>
-          <div className="flex flex-col sm:flex-row gap-2 md:gap-4 justify-center">
+          <div className="flex flex-row gap-2 md:gap-4 justify-center">
             <Button
               onClick={() => scrollToSection('about')}
               size="sm"
