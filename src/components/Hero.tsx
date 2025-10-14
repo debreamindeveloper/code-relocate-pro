@@ -1,7 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { Carousel, CarouselContent, CarouselItem, type CarouselApi } from "@/components/ui/carousel";
 import { useEffect, useState } from "react";
-import hero1 from "@/assets/hero-1.jpg";
+import hero1 from "@/assets/hero-new.jpg";
 import hero2 from "@/assets/hero-2.jpg";
 import hero3 from "@/assets/hero-3.jpg";
 import hero4 from "@/assets/hero-4.jpg";
@@ -55,7 +55,7 @@ const Hero = () => {
                 className="w-full h-full bg-cover bg-top"
                 style={{ backgroundImage: `url(${image})` }}
               >
-                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
+                {index !== 0 && <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />}
               </div>
             </CarouselItem>
           ))}
