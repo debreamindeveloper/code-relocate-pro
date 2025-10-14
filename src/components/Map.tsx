@@ -42,22 +42,22 @@ const Map = () => {
   }
 
   return (
-    <section className="py-20 px-4 bg-background">
-      <div className="max-w-6xl mx-auto">
-        <div className="text-center mb-12">
+    <section className="py-20 bg-background">
+      <div className="max-w-6xl mx-auto px-4 mb-12">
+        <div className="text-center">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
             {t('map.title')}
           </h2>
         </div>
-        <div className="h-[400px] rounded-lg overflow-hidden shadow-lg">
-          <GoogleMap
-            mapContainerStyle={{ width: '100%', height: '100%' }}
-            center={churchLocation}
-            zoom={15}
-          >
-            <Marker position={churchLocation} />
-          </GoogleMap>
-        </div>
+      </div>
+      <div className="h-[400px] w-full shadow-lg">
+        <GoogleMap
+          mapContainerStyle={{ width: '100%', height: '100%' }}
+          center={churchLocation}
+          zoom={15}
+        >
+          <Marker position={churchLocation} />
+        </GoogleMap>
       </div>
     </section>
   );
