@@ -39,18 +39,18 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 35px)' }}>
+    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 70px)' }}>
       <Carousel
         setApi={setApi}
         opts={{
           loop: true,
           align: "start",
         }}
-        className="absolute inset-0 w-full" style={{ height: 'calc(100vh - 35px)' }}
+        className="absolute inset-0 w-full h-full"
       >
-        <CarouselContent className="ml-0" style={{ height: 'calc(100vh - 35px)' }}>
+        <CarouselContent className="ml-0 h-full">
           {heroImages.map((image, index) => (
-            <CarouselItem key={index} className="pl-0 basis-full" style={{ height: 'calc(100vh - 35px)' }}>
+            <CarouselItem key={index} className="pl-0 basis-full h-full">
               <div
                 className="w-full h-full bg-cover bg-top"
                 style={{ backgroundImage: `url(${image})` }}
