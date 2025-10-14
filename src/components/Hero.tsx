@@ -62,8 +62,8 @@ const Hero = () => {
         </CarouselContent>
       </Carousel>
 
-      <div className="relative z-10 flex flex-col items-center justify-between h-1/2 md:h-1/2 lg:h-full py-8">
-        <div className="flex-1 flex flex-col items-center justify-center text-center text-white px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 flex flex-col items-center justify-start h-1/2 md:h-1/2 lg:h-full py-8 gap-8">
+        <div className="flex flex-col items-center justify-center text-center text-white px-4 max-w-4xl mx-auto">
           <h1 className="text-xl md:text-6xl font-bold mb-2 md:mb-6 drop-shadow-lg">
             Welcome to Our Church
           </h1>
