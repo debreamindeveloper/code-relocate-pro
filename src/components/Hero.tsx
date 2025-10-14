@@ -62,7 +62,7 @@ const Hero = () => {
         </CarouselContent>
       </Carousel>
 
-      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center text-white px-4 max-w-4xl mx-auto flex flex-col items-center justify-center h-full">
         <h1 className="text-2xl md:text-6xl font-bold mb-3 md:mb-6 drop-shadow-lg">
           Welcome to Our Church
         </h1>
