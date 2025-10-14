@@ -46,10 +46,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-1">{t('contact.phone')}</h4>
                   <a
-                    href="tel:+358413164877"
+                    href="tel:+358503405585"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +358 41 316 4877
+                    +358 50 340 5585
                   </a>
                 </div>
               </div>
@@ -59,10 +59,10 @@ const Contact = () => {
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-1">{t('contact.email')}</h4>
                   <a
-                    href="mailto:debre.amin.tekle.haimanot@gmail.com"
+                    href="mailto:info@teklehaymanot.fi"
                     className="text-muted-foreground hover:text-primary transition-colors break-all"
                   >
-                    debre.amin.tekle.haimanot@gmail.com
+                    info@teklehaymanot.fi
                   </a>
                 </div>
               </div>
