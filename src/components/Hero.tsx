@@ -46,7 +46,7 @@ const Hero = () => {
           loop: true,
           align: "start",
         }}
-        className="absolute inset-0 w-full h-full"
+        className="absolute inset-0 w-full h-1/2 md:h-1/2 lg:h-full"
       >
         <CarouselContent className="ml-0 h-full">
           {heroImages.map((image, index) => (
