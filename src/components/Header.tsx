@@ -1,4 +1,4 @@
-import logo from "@/assets/saintteklehaimanot.jpg";
+import logo from "@/assets/logo.jpg";
 import { useTranslation } from 'react-i18next';
 import LanguageSwitcher from "@/components/LanguageSwitcher";
 
