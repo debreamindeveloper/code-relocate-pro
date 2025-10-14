@@ -39,7 +39,7 @@ const Hero = () => {
   ];
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 90px)' }}>
+    <section className="relative flex items-center justify-center overflow-hidden" style={{ height: 'calc(100vh - 125px)' }}>
       <Carousel
         setApi={setApi}
         opts={{
