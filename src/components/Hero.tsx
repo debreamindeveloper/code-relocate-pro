@@ -50,13 +50,13 @@ const Hero = () => {
       >
         <CarouselContent className="ml-0 h-full">
           {heroImages.map((image, index) => (
-            <CarouselItem key={index} className="pl-0 basis-full h-full">
-              <div
-                className="w-full h-full bg-cover bg-center"
-                style={{ backgroundImage: `url(${image})` }}
-              >
-                {index !== 0 && <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />}
-              </div>
+            <CarouselItem key={index} className="pl-0 basis-full h-full relative">
+              <img 
+                src={image} 
+                alt={`Hero ${index + 1}`}
+                className="w-full h-full object-cover object-center"
+              />
+              {index !== 0 && <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />}
             </CarouselItem>
           ))}
         </CarouselContent>
