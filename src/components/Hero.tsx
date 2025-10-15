@@ -38,7 +38,7 @@ const Hero = () => {
   const heroImages = [hero1, hero2, hero3, hero4, hero5];
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden h-[50vh] md:h-[60vh] lg:h-[calc(100vh-175px)]">
+    <section className="relative flex items-center justify-center overflow-hidden h-[40vh] md:h-[48vh] lg:h-[calc(100vh-175px)]">
       <Carousel
         setApi={setApi}
         opts={{
@@ -93,7 +93,7 @@ const Hero = () => {
         </CarouselContent>
       </Carousel>
 
-      <div className="relative z-10 flex flex-col items-center justify-end h-full py-4 md:py-8">
+      <div className="absolute bottom-0 left-0 right-0 z-10 flex flex-col items-center justify-end py-4 md:py-8">
         <div className="flex gap-2">
           {heroImages.map((_, index) => (
             <button
