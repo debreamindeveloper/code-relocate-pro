@@ -61,38 +61,39 @@ const Hero = () => {
               {index !== 0 && (
                 <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
               )}
+              <div className="absolute inset-0 flex flex-col items-center justify-end md:justify-center text-center text-white px-4 pb-8 md:pb-0">
+                <div className="max-w-4xl mx-auto">
+                  <h1 className="text-xl md:text-6xl font-bold mb-2 md:mb-6 drop-shadow-lg">
+                    Welcome to Our Church
+                  </h1>
+                  <p className="text-sm md:text-2xl mb-3 md:mb-8 drop-shadow-md">
+                    Join us in worship and fellowship
+                  </p>
+                  <div className="flex flex-row gap-2 md:gap-4 justify-center">
+                    <Button
+                      onClick={() => scrollToSection("about")}
+                      size="sm"
+                      className="bg-secondary text-secondary-foreground hover:bg-secondary/90 md:h-11 md:px-8"
+                    >
+                      Learn More
+                    </Button>
+                    <Button
+                      onClick={() => scrollToSection("contact")}
+                      size="sm"
+                      variant="outline"
+                      className="bg-white/10 text-white border-white/20 hover:bg-white/20 md:h-11 md:px-8"
+                    >
+                      Visit Us
+                    </Button>
+                  </div>
+                </div>
+              </div>
             </CarouselItem>
           ))}
         </CarouselContent>
       </Carousel>
 
-      <div className="relative z-10 flex flex-col items-center justify-between h-full py-4 md:py-8">
-        <div className="h-[50vh] md:h-[60vh] lg:h-[calc(100vh-175px)] flex flex-col items-center justify-end text-center text-white px-4 max-w-4xl mx-auto pb-8">
-          <h1 className="text-xl md:text-6xl font-bold mb-2 md:mb-6 drop-shadow-lg">
-            Welcome to Our Church
-          </h1>
-          <p className="text-sm md:text-2xl mb-3 md:mb-8 drop-shadow-md">
-            Join us in worship and fellowship
-          </p>
-          <div className="flex flex-row gap-2 md:gap-4 justify-center">
-            <Button
-              onClick={() => scrollToSection("about")}
-              size="sm"
-              className="bg-secondary text-secondary-foreground hover:bg-secondary/90 md:h-11 md:px-8"
-            >
-              Learn More
-            </Button>
-            <Button
-              onClick={() => scrollToSection("contact")}
-              size="sm"
-              variant="outline"
-              className="bg-white/10 text-white border-white/20 hover:bg-white/20 md:h-11 md:px-8"
-            >
-              Visit Us
-            </Button>
-          </div>
-        </div>
-
+      <div className="relative z-10 flex flex-col items-center justify-end h-full py-4 md:py-8">
         <div className="flex gap-2">
           {heroImages.map((_, index) => (
             <button
