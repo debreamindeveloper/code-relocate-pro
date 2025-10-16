@@ -57,5 +57,16 @@
     "email": "Sähköposti",
     "verse": "Sillä missä kaksi tai kolme on koolla minun nimessäni, siellä minä olen heidän keskellään. - Matteus 18:20",
     "openingHours": "Aukioloajat"
+  },
+  "footer": {
+    "churchName": "Kirkkoni",
+    "tagline": "Kasvamme uskossa, palvelemme rakkaudessa",
+    "rights": "Kaikki oikeudet pidätetään",
+    "donate": {
+      "title": "Tue Kirkkoa",
+      "description": "Lahjoituksesi auttavat meitä jatkamaan työtämme",
+      "bankAccount": "Tilinumero:",
+      "beneficiary": "Saaja:"
+    }
   }
 }
