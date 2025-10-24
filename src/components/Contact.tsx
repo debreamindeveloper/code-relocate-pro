@@ -1,24 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { MapPin, Phone, Mail, Clock } from "lucide-react";
-import { useTranslation } from 'react-i18next';
-import { useQuery } from '@tanstack/react-query';
-import { supabase } from '@/integrations/supabase/client';
-import { Skeleton } from '@/components/ui/skeleton';
+import { useTranslation } from "react-i18next";
+import { useQuery } from "@tanstack/react-query";
+import { fetchOpeningHours } from "@/services/openingHoursService";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const Contact = () => {
   const { t } = useTranslation();
-  
+
   const { data: openingHours, isLoading } = useQuery({
-    queryKey: ['opening_hours'],
-    queryFn: async () => {
-      const { data, error } = await supabase
-        .from('opening_hours')
-        .select('*')
-        .order('day_of_week', { ascending: true });
-      
-      if (error) throw error;
-      return data;
-    },
+    queryKey: ["opening_hours"],
+    queryFn: fetchOpeningHours,
   });
 
   return (
@@ -26,25 +18,28 @@ const Contact = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            {t('contact.mainTitle')}
+            {t("contact.mainTitle")}
           </h2>
           <p className="text-lg text-muted-foreground italic">
-            {t('contact.verse')}
+            {t("contact.verse")}
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
           <Card className="p-8 border-border bg-card">
             <h3 className="text-2xl font-bold text-card-foreground mb-6">
-              {t('contact.title')}
+              {t("contact.title")}
             </h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
                 <MapPin className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-card-foreground mb-1">{t('contact.address')}</h4>
+                  <h4 className="font-semibold text-card-foreground mb-1">
+                    {t("contact.address")}
+                  </h4>
                   <p className="text-muted-foreground">
-                    Laurintie 145<br />
+                    Laurintie 145
+                    <br />
                     01300 Vantaa, Finland
                   </p>
                 </div>
@@ -53,7 +48,9 @@ const Contact = () => {
               <div className="flex items-start gap-4">
                 <Phone className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-card-foreground mb-1">{t('contact.phone')}</h4>
+                  <h4 className="font-semibold text-card-foreground mb-1">
+                    {t("contact.phone")}
+                  </h4>
                   <a
                     href="tel:+358503405585"
                     className="text-muted-foreground hover:text-primary transition-colors"
@@ -66,7 +63,9 @@ const Contact = () => {
               <div className="flex items-start gap-4">
                 <Mail className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
                 <div>
-                  <h4 className="font-semibold text-card-foreground mb-1">{t('contact.email')}</h4>
+                  <h4 className="font-semibold text-card-foreground mb-1">
+                    {t("contact.email")}
+                  </h4>
                   <a
                     href="mailto:info@teklehaymanot.fi"
                     className="text-muted-foreground hover:text-primary transition-colors break-all"
@@ -82,7 +81,7 @@ const Contact = () => {
             <div className="flex items-center gap-3 mb-6">
               <Clock className="w-6 h-6 text-secondary" />
               <h3 className="text-2xl font-bold text-card-foreground">
-                {t('contact.openingHours')}
+                {t("contact.openingHours")}
               </h3>
             </div>
             {isLoading ? (
@@ -94,9 +93,16 @@ const Contact = () => {
                     key={hour.id}
                     className="flex justify-between items-center py-2 border-b border-border last:border-0"
                   >
-                    <span className="font-medium text-card-foreground">{hour.day_name}</span>
+                    <span className="font-medium text-card-foreground">
+                      {hour.day_name}
+                    </span>
                     <span className="text-muted-foreground">
-                      {hour.is_closed ? 'Closed' : `${hour.open_time?.slice(0, 5)} - ${hour.close_time?.slice(0, 5)}`}
+                      {hour.is_closed
+                        ? "Closed"
+                        : `${hour.open_time?.slice(
+                            0,
+                            5
+                          )} - ${hour.close_time?.slice(0, 5)}`}
                     </span>
                   </div>
                 ))}
