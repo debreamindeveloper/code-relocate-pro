@@ -1,25 +1,16 @@
 import { Card } from "@/components/ui/card";
 import { Calendar, MapPin } from "lucide-react";
-import { useTranslation } from 'react-i18next';
-import { useQuery } from '@tanstack/react-query';
-import { supabase } from '@/integrations/supabase/client';
-import { Skeleton } from '@/components/ui/skeleton';
+import { useTranslation } from "react-i18next";
+import { useQuery } from "@tanstack/react-query";
+import { fetchEvents } from "@/integrations/azure";
+import { Skeleton } from "@/components/ui/skeleton";
 
 const Events = () => {
   const { t } = useTranslation();
-  
+
   const { data: events, isLoading } = useQuery({
-    queryKey: ['events'],
-    queryFn: async () => {
-      const { data, error } = await supabase
-        .from('events')
-        .select('*')
-        .gte('event_date', new Date().toISOString().split('T')[0])
-        .order('event_date', { ascending: true });
-      
-      if (error) throw error;
-      return data;
-    },
+    queryKey: ["events"],
+    queryFn: fetchEvents,
   });
 
   return (
@@ -27,10 +18,10 @@ const Events = () => {
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-12">
           <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-4">
-            {t('events.title')}
+            {t("events.title")}
           </h2>
           <p className="text-lg text-muted-foreground">
-            {t('events.subtitle')}
+            {t("events.subtitle")}
           </p>
         </div>
 
@@ -44,7 +35,7 @@ const Events = () => {
           <div className="grid md:grid-cols-3 gap-6">
             {events?.map((event) => (
               <Card
-                key={event.id}
+                key={event.rowKey}
                 className="p-6 hover:shadow-lg transition-all hover:-translate-y-1 bg-card border-border"
               >
                 <div className="mb-4">
@@ -58,7 +49,7 @@ const Events = () => {
                 <div className="space-y-2">
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
                     <Calendar className="w-4 h-4 text-secondary" />
-                    {new Date(event.event_date).toLocaleDateString()}
+                    {new Date(event.eventDate).toLocaleDateString()}
                   </div>
                   {event.location && (
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
