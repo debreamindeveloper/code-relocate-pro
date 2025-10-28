@@ -1,14 +1,18 @@
 import logo from "@/assets/logo.jpg";
-import { useTranslation } from 'react-i18next';
+import { useTranslation } from "react-i18next";
 import LanguageSwitcher from "@/components/LanguageSwitcher";
+import { useState } from "react";
+import { Menu, X } from "lucide-react";
 
 const Header = () => {
   const { t } = useTranslation();
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
-      element.scrollIntoView({ behavior: 'smooth' });
+      element.scrollIntoView({ behavior: "smooth" });
+      setIsMenuOpen(false); // Close menu after navigation
     }
   };
 
@@ -17,7 +21,7 @@ const Header = () => {
       <div className="container mx-auto px-4 py-1">
         <div className="flex items-center justify-between gap-4">
           <button
-            onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}
+            onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
             className="flex items-center gap-3 hover:opacity-80 transition-opacity"
           >
             <img
@@ -32,36 +36,91 @@ const Header = () => {
 
           <nav className="hidden md:flex items-center gap-4">
             <button
-              onClick={() => scrollToSection('about')}
+              onClick={() => scrollToSection("about")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              {t('header.about')}
+              {t("header.about")}
             </button>
             <button
-              onClick={() => scrollToSection('services')}
+              onClick={() => scrollToSection("services")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              {t('header.services')}
+              {t("header.services")}
             </button>
             <button
-              onClick={() => scrollToSection('events')}
+              onClick={() => scrollToSection("events")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              {t('header.events')}
+              {t("header.events")}
             </button>
             <button
-              onClick={() => scrollToSection('contact')}
+              onClick={() => scrollToSection("contact")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
-              {t('header.contact')}
+              {t("header.contact")}
+            </button>
+            <button
+              onClick={() => scrollToSection("donate")}
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              {t("header.donate")}
             </button>
             <LanguageSwitcher />
           </nav>
 
-          <div className="md:hidden">
+          <div className="md:hidden flex items-center gap-2">
             <LanguageSwitcher />
+            <button
+              onClick={() => setIsMenuOpen(!isMenuOpen)}
+              className="p-2 hover:bg-accent rounded-lg transition-colors"
+              aria-label="Toggle menu"
+            >
+              {isMenuOpen ? (
+                <X className="w-6 h-6" />
+              ) : (
+                <Menu className="w-6 h-6" />
+              )}
+            </button>
           </div>
         </div>
+
+        {/* Mobile Menu */}
+        {isMenuOpen && (
+          <nav className="md:hidden border-t border-border bg-background/95 backdrop-blur-sm">
+            <div className="container mx-auto px-4 py-4 flex flex-col gap-3">
+              <button
+                onClick={() => scrollToSection("about")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                {t("header.about")}
+              </button>
+              <button
+                onClick={() => scrollToSection("services")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                {t("header.services")}
+              </button>
+              <button
+                onClick={() => scrollToSection("events")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                {t("header.events")}
+              </button>
+              <button
+                onClick={() => scrollToSection("contact")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                {t("header.contact")}
+              </button>
+              <button
+                onClick={() => scrollToSection("donate")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                {t("header.donate")}
+              </button>
+            </div>
+          </nav>
+        )}
       </div>
     </header>
   );
