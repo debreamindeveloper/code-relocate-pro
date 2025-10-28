@@ -4,7 +4,8 @@
     "about": "About",
     "services": "Ministries",
     "events": "Events",
-    "contact": "Contact"
+    "contact": "Contact",
+    "donate": "Donate"
   },
   "hero": {
     "title": "Welcome to Saint Teklehaimanot Ethiopian Orthodox Tewahedo Church",
@@ -57,6 +58,24 @@
     "email": "Email",
     "verse": "For where two or three gather in my name, there am I with them. - Matthew 18:20",
     "openingHours": "Opening Hours"
+  },
+  "donate": {
+    "title": "Support Our Church",
+    "subtitle": "Your generous donations help us continue our ministry and serve our community",
+    "mainAccount": {
+      "title": "Daily Operations",
+      "description": "Support the day-to-day operations of our church, including worship services, community programs, and pastoral care."
+    },
+    "buildingAccount": {
+      "title": "Building Committee",
+      "description": "Help us build a new church home. Your contribution to this fund supports our vision for a dedicated space for worship and community gathering."
+    },
+    "bankAccount": "Bank Account:",
+    "beneficiary": "Beneficiary:",
+    "reference": "Reference:",
+    "qrCodePlaceholder": "Scan to donate (Placeholder - Real QR code coming soon)",
+    "noQrCode": "Bank transfer only - No QR code available for this account",
+    "thankYou": "Thank you for your generosity and support. Your donations make a real difference in our ministry."
   },
   "footer": {
     "churchName": "Our Church",

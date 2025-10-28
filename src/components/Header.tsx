@@ -59,6 +59,12 @@ const Header = () => {
             >
               {t("header.contact")}
             </button>
+            <button
+              onClick={() => scrollToSection("donate")}
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              {t("header.donate")}
+            </button>
             <LanguageSwitcher />
           </nav>
 
@@ -105,6 +111,12 @@ const Header = () => {
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left py-2"
               >
                 {t("header.contact")}
+              </button>
+              <button
+                onClick={() => scrollToSection("donate")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                {t("header.donate")}
               </button>
             </div>
           </nav>

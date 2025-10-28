@@ -4,7 +4,8 @@
     "about": "Tietoa meistä",
     "services": "Palvelut",
     "events": "Tapahtumat",
-    "contact": "Yhteystiedot"
+    "contact": "Yhteystiedot",
+    "donate": "Lahjoita"
   },
   "hero": {
     "title": "Tervetuloa Pyhän Teklehaimanotin Etiopian ortodoksiseen Tewahedo-kirkkoon",
@@ -57,6 +58,24 @@
     "email": "Sähköposti",
     "verse": "Sillä missä kaksi tai kolme on koolla minun nimessäni, siellä minä olen heidän keskellään. - Matteus 18:20",
     "openingHours": "Aukioloajat"
+  },
+  "donate": {
+    "title": "Tue Kirkkoa",
+    "subtitle": "Lahjoituksesi auttavat meitä jatkamaan palveluamme ja palvelemaan yhteisöämme",
+    "mainAccount": {
+      "title": "Päivittäiset Toiminnot",
+      "description": "Tue kirkkoomme päivittäisiä toimintoja, mukaan lukien jumalanpalvelukset, yhteisöohjelmat ja pastoraalinen hoito."
+    },
+    "buildingAccount": {
+      "title": "Rakennuskomitea",
+      "description": "Auta meitä rakentamaan uusi kirkko. Lahjoituksesi tälle rahastolle tukee visiotamme omasta tilasta jumalanpalvelukselle ja yhteisön kokoontumiselle."
+    },
+    "bankAccount": "Tilinumero:",
+    "beneficiary": "Saaja:",
+    "reference": "Viite:",
+    "qrCodePlaceholder": "Skannaa lahjoittaaksesi (Paikanpitäjä - Oikea QR-koodi tulossa pian)",
+    "noQrCode": "Vain pankkisiirto - Tälle tilille ei ole QR-koodia",
+    "thankYou": "Kiitos anteliaisuudestasi ja tuestasi. Lahjoituksesi tekevät todellisen eron palveluumme."
   },
   "footer": {
     "churchName": "Kirkkoni",

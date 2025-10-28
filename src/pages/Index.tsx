@@ -5,6 +5,7 @@ import Services from "@/components/Services";
 import Events from "@/components/Events";
 import Map from "@/components/Map";
 import Contact from "@/components/Contact";
+import Donate from "@/components/Donate";
 import Footer from "@/components/Footer";
 
 const Index = () => {
@@ -18,6 +19,7 @@ const Index = () => {
         <Events />
         <Map />
         <Contact />
+        <Donate />
         <Footer />
       </div>
     </div>
