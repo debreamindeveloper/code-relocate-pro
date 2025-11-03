@@ -5,11 +5,26 @@
     "services": "Palvelut",
     "events": "Tapahtumat",
     "contact": "Yhteystiedot",
-    "donate": "Lahjoita"
+    "donate": "Lahjoita",
+    "churchName": "Debre Amin Abune Tekle Haimanot -kirkko, Helsinki"
   },
   "hero": {
-    "title": "Tervetuloa Pyhän Teklehaimanotin Etiopian ortodoksiseen Tewahedo-kirkkoon",
-    "subtitle": "Liity meihin palvomaan ja yhteisöön"
+    "title": "Tervetuloa kirkkoomme",
+    "subtitle": "Liity meihin palvomaan ja yhteisöön",
+    "learnMore": "Lue lisää",
+    "visitUs": "Käy meillä"
+  },
+  "about": {
+    "title": "Tietoa meistä",
+    "paragraph1": "Debre Amin Abune Tekle Haimanot -etiopialais-ortodoksinen Tewahedo-kirkko Helsingissä, Suomessa — joka kuuluu Etiopialais-ortodoksisen Tewahedo-kirkon Pohjoismaiden ja Kreikan hiippakuntaan — perustettiin alun perin vuonna 1993 ortodoksisten kristittyjen toimesta, jotka asuivat Suomessa, erityisesti Helsingin kaupungissa. Se aloitti toimintansa uskonnollisena yhdistyksenä. Yhdistyksen päätarkoituksena oli säilyttää ja siirtää seuraaville sukupolville esi-isiltä peritty usko, kirkon perinteet, moraali, historia, kulttuuri ja kieli, joita ortodoksisen opin kautta oli vahvistettu. Monien vuosien palvelutyön jälkeen yhdistys korotettiin 12. kesäkuuta 2011 Jumalan tahdosta ja arvoisan arkkipiispa Abune Entoksen siunauksella virallisesti kirkoksi, ja sen nimeksi annettiin Debre Amin Abune Tekle Haimanot -kirkko, Helsinki. Kirkko täytti kaikki lailliset vaatimukset ja sai virallisen tunnustuksen Suomessa.",
+    "section1Title": "Kasvu ja papisto",
+    "section1Content": "Kirkoksi perustamisen jälkeen sen toiminta on jatkuvasti kasvanut ja laajentunut, ja seurakuntalaisten sekä papiston määrä on lisääntynyt. Vuoteen 2016 asti papit muista Euroopan maista vierailivat ja palvelivat seurakuntaa toimittamalla pyhän liturgian ja opettamalla evankeliumia. Marraskuusta 2016 alkaen kirkolla on ollut oma hallinnollinen pappinsa, isä Lema Besufkad, joka palvelee yhä uskollisesti. Tällä hetkellä kirkossa toimii neljä pappia, yksi diakonijohtaja, kymmenen diakonia sekä satoja seurakuntalaisia.",
+    "section2Title": "Jumalanpalveluspaikka",
+    "section2Content": "Perustamisesta aina elokuuhun 2023 asti kirkko piti jumalanpalveluksiaan rakennuksessa, jota se sai lainata muutamaksi tunniksi kerran tai kahdesti kuukaudessa Suomen ortodoksiselta kirkolta. Elokuusta 2023 lähtien, arvoisan arkkipiispa Abune Elyaksen siunauksella, kirkko on käyttänyt vuokrattua rakennusta pysyvänä jumalanpalveluspaikkanaan. Tällä hetkellä seurakunta tekee aktiivisesti työtä oman kirkon rakennuksen hankkimiseksi.",
+    "section3Title": "Säännöt ja hallinto",
+    "section3Content": "Debre Amin Abune Tekle Haimanot -kirkon säännöt ja hallinnolliset ohjeet laadittiin ja otettiin käyttöön pian kirkon perustamisen jälkeen. Näitä sääntöjä on päivitetty säännöllisesti hyvän hallinnon ja palvelutyön jatkuvuuden varmistamiseksi. Kirkon pääasiallinen hallinnollinen perusta on valmisteltu huolellisesti tukemaan sen tehtävää ja toimintaa.",
+    "paragraph2LinkText": "Klikkaa tästä",
+    "paragraph2LinkUrl": "https://teams.microsoft.com/l/file/dummy-pdf-link"
   },
   "services": {
     "title": "Palvelumme",
@@ -19,15 +34,15 @@
       "description": "Liity meihin joka sunnuntai inspiroivaan palvontaan ja voimakkaaseen opetukseen"
     },
     "youthMinistry": {
-      "title": "Nuorisotyö",
+      "title": "Evankeliumin palvelu",
       "description": "Valtuuttamalla seuraavaa sukupolvea uskon ja yhteisön kautta"
     },
     "bibleStudy": {
-      "title": "Raamattututkistelu",
-      "description": "Kasva syvemmälle Jumalan Sanassa viikoittaisten tutkimusryhmien kautta"
+      "title": "Kirkon yhteyden retket",
+      "description": "Matkustamalla yhdessä uskossa, yhteydessä ja juhlinnassa."
     },
     "choir": {
-      "title": "Kuoro",
+      "title": "Palvontakuoro",
       "description": "Nosta äänesi ylistykseen ja palvontaan kuoromme kanssa"
     },
     "childrens": {
@@ -35,8 +50,8 @@
       "description": "Hauskoja ja kiinnostavia Raamatun oppitunteja kaikenikäisille lapsille"
     },
     "prayer": {
-      "title": "Rukouskokoukset",
-      "description": "Liity meihin voimakkaaseen yhteiseen rukoukseen"
+      "title": "Juhlat ja pyhäpäivät",
+      "description": "Iloitsemme yhdessä uskon juhlissa ja rakkauden yhteydessä"
     }
   },
   "events": {
