@@ -1,15 +1,30 @@
-{
+﻿{
   "header": {
     "home": "Home",
     "about": "About",
     "services": "Ministries",
     "events": "Events",
     "contact": "Contact",
-    "donate": "Donate"
+    "donate": "Donate",
+    "churchName": "Debre Amin Abune Teklehaymanot Church, Helsinki"
   },
   "hero": {
-    "title": "Welcome to Saint Teklehaimanot Ethiopian Orthodox Tewahedo Church",
-    "subtitle": "Join us in worship and fellowship"
+    "title": "Welcome to Our Church",
+    "subtitle": "Join us in worship and fellowship",
+    "learnMore": "Learn More",
+    "visitUs": "Visit Us"
+  },
+  "about": {
+    "title": "About Our Church",
+    "paragraph1": "The Debre Amin Abune Tekle Haimanot Ethiopian Orthodox Tewahedo Church in Helsinki, Finland—under the Ethiopian Orthodox Tewahedo Church in the Nordic and Greek Diocese—was first founded in 1993 by Orthodox Christians residing in Finland, especially in the city of Helsinki, as a religious association.When the association was established, its main purpose was to preserve and pass on to the next generation the faith, church traditions, moral conduct, history, culture, and language that had been inherited from their forefathers and strengthened by Orthodox teachings. After providing various services for many years as an association, on June 12, 2011, by the will of the Almighty God and with the blessing of His Eminence Abune Entons, then Archbishop of Northern and Western Europe, the association was officially elevated to the status of a Church and named Debre Amin Abune Tekle Haimanot Church, Helsinki. The church fulfilled all legal requirements and gained official recognition in Finland. ",
+    "section1Title": "Growth and Clergy",
+    "section1Content": "Since becoming a Church, its services have continued to grow and expand, with an increasing number of believers and clergy members. Until 2016, priests from other European countries used to visit and serve the congregation by conducting the Holy Liturgy and teaching the Gospel. Since November 2016, the Church has had its own resident administrative priest, Father Lema Besufekad, who continues to serve faithfully. Currently, the Church has four priests, one deacon leader, ten deacons, and hundreds of members.",
+    "section2Title": "Worship Location",
+    "section2Content": "From its inception until August 2023, the Church held its services in a building borrowed for a few hours—once or twice a month—from the Finnish Orthodox Church. Since August 2023, under the blessing of His Eminence Abune Elyas (Elias?), Archbishop of the Nordic and Greek Diocese, the Church has been using a rented building as its permanent place of worship. At present, the Church is actively working toward purchasing its own building.",
+    "section3Title": "Constitution and Bylaws",
+    "section3Content": "The bylaws and administrative regulations of Debre Amin Abune Tekle Haimanot Church, Helsinki were drafted and implemented soon after its founding. These bylaws have been updated periodically to ensure proper governance and to facilitate the continuation and expansion of the Church's ministry. The main legal framework has been carefully prepared to support the Church's mission and administration.",
+    "paragraph2LinkText": "Click here",
+    "paragraph2LinkUrl": "https://teams.microsoft.com/l/file/dummy-pdf-link"
   },
   "services": {
     "title": "Our Ministries",
@@ -19,12 +34,12 @@
       "description": "Join us every Sunday for inspiring worship and powerful teaching"
     },
     "youthMinistry": {
-      "title": "Youth Ministry",
+      "title": "Gospel ministry",
       "description": "Empowering the next generation through faith and fellowship"
     },
     "bibleStudy": {
-      "title": "Bible Study",
-      "description": "Grow deeper in God's Word through weekly study groups"
+      "title": "Church Fellowship Trips",
+      "description": "Journeying together in faith, fellowship, and celebration."
     },
     "choir": {
       "title": "Worship Choir",
@@ -35,8 +50,8 @@
       "description": "Fun and engaging Bible lessons for kids of all ages"
     },
     "prayer": {
-      "title": "Prayer Meetings",
-      "description": "Join us in powerful corporate prayer"
+      "title": "Feasts and Holidays",
+      "description": "Rejoicing together in the feasts of faith and the fellowship of love"
     }
   },
   "events": {

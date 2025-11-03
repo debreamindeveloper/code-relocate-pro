@@ -5,7 +5,7 @@ import { useState } from "react";
 import { Menu, X } from "lucide-react";
 
 const Header = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   const scrollToSection = (id: string) => {
@@ -30,7 +30,7 @@ const Header = () => {
               className="h-8 w-8 object-contain rounded-lg"
             />
             <h1 className="text-sm md:text-lg font-semibold text-foreground hidden sm:block">
-              ሄልሲንኪ ደብረ አሚን አቡነ ተክለሃይማኖት ቤተ ክርስትያን
+              {t("header.churchName")}
             </h1>
           </button>
 
