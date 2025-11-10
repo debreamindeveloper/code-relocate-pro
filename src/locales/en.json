@@ -58,7 +58,10 @@
     "title": "Upcoming Events",
     "subtitle": "Don't miss what's happening",
     "loading": "Loading events...",
-    "noEvents": "No upcoming events at this time"
+    "noEvents": "No upcoming events at this time",
+    "notePrefix": "Note: Regular programs such as the Sunday Liturgy are not listed here. For more information about our regular services and schedules, please check the ",
+    "noteLinkText": "Opening Hours",
+    "noteSuffix": " section."
   },
   "map": {
     "title": "Visit Us",

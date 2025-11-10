@@ -58,7 +58,10 @@
     "title": "Tulevat tapahtumat",
     "subtitle": "Älä missaa jää paitsi, siitä mitä tapahtuu",
     "loading": "Ladataan tapahtumia...",
-    "noEvents": "Ei tulevia tapahtumia tällä hetkellä"
+    "noEvents": "Ei tulevia tapahtumia tällä hetkellä",
+    "notePrefix": "Huomautus: Säännöllisiä ohjelmia, kuten sunnuntain liturgiaa, ei ole lueteltu täällä. Lisätietoja säännöllisistä palveluistamme ja aikatauluista saat ",
+    "noteLinkText": "aukioloajat",
+    "noteSuffix": "-osiosta."
   },
   "map": {
     "title": "Käy vieraile meillä",
