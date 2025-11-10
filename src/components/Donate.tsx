@@ -1,7 +1,6 @@
 import { useTranslation } from "react-i18next";
 import { Card } from "@/components/ui/card";
 import { Heart, Building2 } from "lucide-react";
-import qrCodeImage from "@/assets/qr-code.png";
 
 const Donate = () => {
   const { t } = useTranslation();
@@ -38,7 +37,7 @@ const Donate = () => {
                   {t("donate.bankAccount")}
                 </p>
                 <p className="font-mono text-lg text-primary font-bold">
-                  FI21 8146 9710 2540 86
+                  FI83 8000 9710 2023 12
                 </p>
               </div>
 
@@ -57,29 +56,12 @@ const Donate = () => {
               </div>
             </div>
 
-            {/* QR Code and Mobile Pay */}
-            <div className="space-y-6">
-              <div className="flex flex-col items-center">
-                <div className="bg-white p-4 rounded-lg mb-3">
-                  <img
-                    src={qrCodeImage}
-                    alt="Donate QR Code"
-                    className="w-[150px] h-[150px]"
-                  />
-                </div>
-                <p className="text-xs text-muted-foreground text-center">
-                  Scan to donate
-                </p>
-              </div>
-
-              <div className="text-center">
-                <p className="text-sm font-semibold text-foreground mb-1">
-                  Mobile Pay
-                </p>
-                <p className="font-mono text-lg text-primary font-bold">
-                  83818
-                </p>
-              </div>
+            {/* Mobile Pay */}
+            <div className="text-center">
+              <p className="text-sm font-semibold text-foreground mb-1">
+                Mobile Pay
+              </p>
+              <p className="font-mono text-lg text-primary font-bold">83818</p>
             </div>
           </Card>
 
@@ -96,7 +78,7 @@ const Donate = () => {
               {t("donate.buildingAccount.description")}
             </p>
 
-            <div className="space-y-4">
+            <div className="space-y-4 mb-8">
               <div>
                 <p className="text-sm font-semibold text-foreground mb-1">
                   {t("donate.bankAccount")}
@@ -119,6 +101,14 @@ const Donate = () => {
                 </p>
                 <p className="text-foreground">Building Committee</p>
               </div>
+            </div>
+
+            {/* Mobile Pay */}
+            <div className="text-center">
+              <p className="text-sm font-semibold text-foreground mb-1">
+                Mobile Pay
+              </p>
+              <p className="font-mono text-lg text-primary font-bold">21814</p>
             </div>
           </Card>
         </div>
