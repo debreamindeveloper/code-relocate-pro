@@ -1,10 +1,10 @@
 {
   "header": {
     "home": "Etusivu",
-    "about": "Tietoa meistä",
-    "services": "Palvelut",
+    "about": "Tietoa kirkosta",
+    "services": "Hengelliset palvelut",
     "events": "Tapahtumat",
-    "contact": "Yhteystiedot",
+    "contact": "Ota yhteyttä",
     "donate": "Lahjoita",
     "churchName": "Debre Amin Abune Tekle Haimanot -kirkko, Helsinki"
   },
@@ -16,11 +16,11 @@
   },
   "about": {
     "title": "Tietoa meistä",
-    "paragraph1": "Debre Amin Abune Tekle Haimanot -etiopialais-ortodoksinen Tewahedo-kirkko Helsingissä, Suomessa — joka kuuluu Etiopialais-ortodoksisen Tewahedo-kirkon Pohjoismaiden ja Kreikan hiippakuntaan — perustettiin alun perin vuonna 1993 ortodoksisten kristittyjen toimesta, jotka asuivat Suomessa, erityisesti Helsingin kaupungissa. Se aloitti toimintansa uskonnollisena yhdistyksenä. Yhdistyksen päätarkoituksena oli säilyttää ja siirtää seuraaville sukupolville esi-isiltä peritty usko, kirkon perinteet, moraali, historia, kulttuuri ja kieli, joita ortodoksisen opin kautta oli vahvistettu. Monien vuosien palvelutyön jälkeen yhdistys korotettiin 12. kesäkuuta 2011 Jumalan tahdosta ja arvoisan arkkipiispa Abune Entoksen siunauksella virallisesti kirkoksi, ja sen nimeksi annettiin Debre Amin Abune Tekle Haimanot -kirkko, Helsinki. Kirkko täytti kaikki lailliset vaatimukset ja sai virallisen tunnustuksen Suomessa.",
+    "paragraph1": "Debre Amin Abune Tekle Haimanot -etiopialais-ortodoksinen Tewahedo-kirkko Helsingissä, Suomessa — joka kuuluu Etiopialais-ortodoksisen Tewahedo-kirkon Pohjoismaiden ja Kreikan hiippakuntaan — perustettiin alun perin vuonna 1993 ortodoksisten kristittyjen toimesta, jotka asuivat Suomessa, erityisesti Helsingissä kaupungissa. Se aloitti toimintansa uskonnollisena yhdistyksenä. Yhdistyksen päätarkoituksena oli säilyttää ja siirtää seuraaville sukupolville esi-isiltä peritty usko, kirkon perinteet, moraali, historia, kulttuuri ja kieli, joita ortodoksisen opin kautta oli vahvistettu. Monien vuosien palvelutyön jälkeen yhdistys korotettiin 12. kesäkuuta 2011 Jumalan tahdosta ja arvoisan arkkipiispa Abune Entoksen siunauksella virallisesti kirkoksi, ja sen nimeksi annettiin Debre Amin Abune Tekle Haimanot -kirkko, Helsinki. Kirkko täytti kaikki lailliset vaatimukset ja sai virallisen tunnustuksen Suomessa.",
     "section1Title": "Kasvu ja papisto",
-    "section1Content": "Kirkoksi perustamisen jälkeen sen toiminta on jatkuvasti kasvanut ja laajentunut, ja seurakuntalaisten sekä papiston määrä on lisääntynyt. Vuoteen 2016 asti papit muista Euroopan maista vierailivat ja palvelivat seurakuntaa toimittamalla pyhän liturgian ja opettamalla evankeliumia. Marraskuusta 2016 alkaen kirkolla on ollut oma hallinnollinen pappinsa, isä Lema Besufkad, joka palvelee yhä uskollisesti. Tällä hetkellä kirkossa toimii neljä pappia, yksi diakonijohtaja, kymmenen diakonia sekä satoja seurakuntalaisia.",
+    "section1Content": "Kirkoksi perustamisen jälkeen sen toiminta on jatkuvasti kasvanut ja laajentunut, ja seurakuntalaisten sekä papiston määrä on lisääntynyt. Vuoteen 2016 asti papit muista Euroopan maista vierailivat ja palvelivat seurakuntaa toimittamalla pyhän liturgian ja opettamalla evankeliumia. Marraskuusta 2016 alkaen kirkolla on ollut oma hallinnollinen pappinsa, isä Lema Besufikad, joka palvelee yhä uskollisesti. Tällä hetkellä kirkossa toimii neljä pappia, yksi diakonijohtaja, kymmenen diakonia sekä satoja seurakuntalaisia.",
     "section2Title": "Jumalanpalveluspaikka",
-    "section2Content": "Perustamisesta aina elokuuhun 2023 asti kirkko piti jumalanpalveluksiaan rakennuksessa, jota se sai lainata muutamaksi tunniksi kerran tai kahdesti kuukaudessa Suomen ortodoksiselta kirkolta. Elokuusta 2023 lähtien, arvoisan arkkipiispa Abune Elyaksen siunauksella, kirkko on käyttänyt vuokrattua rakennusta pysyvänä jumalanpalveluspaikkanaan. Tällä hetkellä seurakunta tekee aktiivisesti työtä oman kirkon rakennuksen hankkimiseksi.",
+    "section2Content": "Perustamisesta aina elokuuhun 2023 asti kirkko piti jumalanpalveluksiaan kirkossa, jota se sai lainata muutamaksi tunniksi kerran tai kahdesti kuukaudessa Suomen ortodoksiselta seurakunnalta. Elokuusta 2023 lähtien, arvoisan arkkipiispa Abune Elyaksen siunauksella, kirkko on käyttänyt vuokrattua rakennusta pysyvänä jumalanpalveluspaikkanaan. Tällä hetkellä seurakunta tekee aktiivisesti työtä oman kirkon rakennuksen hankkimiseksi.",
     "section3Title": "Säännöt ja hallinto",
     "section3Content": "Debre Amin Abune Tekle Haimanot -kirkon säännöt ja hallinnolliset ohjeet laadittiin ja otettiin käyttöön pian kirkon perustamisen jälkeen. Näitä sääntöjä on päivitetty säännöllisesti hyvän hallinnon ja palvelutyön jatkuvuuden varmistamiseksi. Kirkon pääasiallinen hallinnollinen perusta on valmisteltu huolellisesti tukemaan sen tehtävää ja toimintaa.",
     "paragraph2LinkText": "Klikkaa tästä",
@@ -31,18 +31,18 @@
     "subtitle": "Löydä erilaisia tapoja yhdistyä ja kasvaa uskossa",
     "sundayWorship": {
       "title": "Sunnuntaipalvelus",
-      "description": "Liity meihin joka sunnuntai inspiroivaan palvontaan ja voimakkaaseen opetukseen"
+      "description": "Osallistu sunnuntaisin inspiroivaan palvontaan ja voimakkaaseen opetukseen"
     },
     "youthMinistry": {
       "title": "Evankeliumin palvelu",
-      "description": "Valtuuttamalla seuraavaa sukupolvea uskon ja yhteisön kautta"
+      "description": "Valtuuttamalla Voimaannuttamalla seuraavaa sukupolvea uskon ja yhteisön kautta"
     },
     "bibleStudy": {
-      "title": "Kirkon yhteyden retket",
+      "title": "Kirkon yhteyden järjestämät retket",
       "description": "Matkustamalla yhdessä uskossa, yhteydessä ja juhlinnassa."
     },
     "choir": {
-      "title": "Palvontakuoro",
+      "title": "Palvontakuoro/Kirkkokuoro",
       "description": "Nosta äänesi ylistykseen ja palvontaan kuoromme kanssa"
     },
     "childrens": {
@@ -56,12 +56,15 @@
   },
   "events": {
     "title": "Tulevat tapahtumat",
-    "subtitle": "Älä missaa mitä tapahtuu",
+    "subtitle": "Älä missaa jää paitsi, siitä mitä tapahtuu",
     "loading": "Ladataan tapahtumia...",
-    "noEvents": "Ei tulevia tapahtumia tällä hetkellä"
+    "noEvents": "Ei tulevia tapahtumia tällä hetkellä",
+    "notePrefix": "Huomautus: Säännöllisiä ohjelmia, kuten sunnuntain liturgiaa, ei ole lueteltu täällä. Lisätietoja säännöllisistä palveluistamme ja aikatauluista saat ",
+    "noteLinkText": "aukioloajat",
+    "noteSuffix": "-osiosta."
   },
   "map": {
-    "title": "Käy meillä",
+    "title": "Käy vieraile meillä",
     "loading": "Ladataan karttaa...",
     "error": "Kartan lataaminen epäonnistui"
   },
@@ -75,11 +78,11 @@
     "openingHours": "Aukioloajat"
   },
   "donate": {
-    "title": "Tue Kirkkoa",
+    "title": "Tue kirkkoa",
     "subtitle": "Lahjoituksesi auttavat meitä jatkamaan palveluamme ja palvelemaan yhteisöämme",
     "mainAccount": {
-      "title": "Päivittäiset Toiminnot",
-      "description": "Tue kirkkoomme päivittäisiä toimintoja, mukaan lukien jumalanpalvelukset, yhteisöohjelmat ja pastoraalinen hoito."
+      "title": "Päivittäiset toiminnot",
+      "description": "Tue kirkkomme päivittäisiä toimintoja, mukaan lukien jumalanpalvelukset, yhteisöohjelmat ja pastoraalinen hoito hengellinen tuki."
     },
     "buildingAccount": {
       "title": "Rakennuskomitea",
@@ -90,17 +93,18 @@
     "reference": "Viite:",
     "qrCodePlaceholder": "Skannaa lahjoittaaksesi (Paikanpitäjä - Oikea QR-koodi tulossa pian)",
     "noQrCode": "Vain pankkisiirto - Tälle tilille ei ole QR-koodia",
-    "thankYou": "Kiitos anteliaisuudestasi ja tuestasi. Lahjoituksesi tekevät todellisen eron palveluumme."
+    "thankYou": "Kiitos anteliaisuudestasi ja tuestasi. Lahjoituksesi tekevät todellisen eron seurakunnan palveluihin."
   },
   "footer": {
-    "churchName": "Kirkkoni",
+    "churchName": "Kirkkomme",
     "tagline": "Kasvamme uskossa, palvelemme rakkaudessa",
     "rights": "Kaikki oikeudet pidätetään",
     "donate": {
-      "title": "Tue Kirkkoa",
+      "title": "Tue kirkkoa",
       "description": "Lahjoituksesi auttavat meitä jatkamaan työtämme",
       "bankAccount": "Tilinumero:",
       "beneficiary": "Saaja:"
     }
   }
 }
+

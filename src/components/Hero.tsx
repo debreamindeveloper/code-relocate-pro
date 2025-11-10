@@ -61,9 +61,7 @@ const Hero = () => {
                 alt={`Hero ${index + 1}`}
                 className="w-full h-full object-cover object-center"
               />
-              {index !== 0 && (
-                <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
-              )}
+              <div className="absolute inset-0 bg-gradient-to-b from-black/40 via-black/30 to-black/50" />
               <div className="absolute inset-0 flex flex-col items-center justify-end md:justify-center text-center text-white px-4 pb-8 md:pb-0">
                 <div className="max-w-4xl mx-auto">
                   <h1 className="text-xl md:text-6xl font-bold mb-2 md:mb-6 drop-shadow-lg">
@@ -83,8 +81,7 @@ const Hero = () => {
                     <Button
                       onClick={() => scrollToSection("contact")}
                       size="sm"
-                      variant="outline"
-                      className="bg-white/10 text-white border-white/20 hover:bg-white/20 md:h-11 md:px-8"
+                      className="bg-white text-foreground hover:bg-white/90 md:h-11 md:px-8"
                     >
                       {t("hero.visitUs")}
                     </Button>

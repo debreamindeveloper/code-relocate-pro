@@ -12,8 +12,8 @@ i18n
       am: { translation: am },
       fi: { translation: fi }
     },
-    lng: localStorage.getItem('language') || 'en',
-    fallbackLng: 'en',
+    lng: localStorage.getItem('language') || 'am',
+    fallbackLng: 'am',
     interpolation: {
       escapeValue: false
     }
