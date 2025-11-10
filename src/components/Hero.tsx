@@ -81,8 +81,7 @@ const Hero = () => {
                     <Button
                       onClick={() => scrollToSection("contact")}
                       size="sm"
-                      variant="outline"
-                      className="bg-white/10 text-white border-white/20 hover:bg-white/20 md:h-11 md:px-8"
+                      className="bg-white text-foreground hover:bg-white/90 md:h-11 md:px-8"
                     >
                       {t("hero.visitUs")}
                     </Button>

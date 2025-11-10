@@ -6,7 +6,22 @@ import { fetchOpeningHours } from "@/integrations/azure";
 import { Skeleton } from "@/components/ui/skeleton";
 
 const Contact = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation();
+
+  const getTranslatedText = (
+    multilingualField: { en?: string; fi?: string; am?: string } | string
+  ): string => {
+    if (typeof multilingualField === "string") {
+      return multilingualField;
+    }
+
+    const currentLang = i18n.language;
+    const text =
+      multilingualField[currentLang as keyof typeof multilingualField] ||
+      multilingualField.en ||
+      "";
+    return text;
+  };
 
   const { data: openingHours, isLoading } = useQuery({
     queryKey: ["opening_hours"],
@@ -94,7 +109,7 @@ const Contact = () => {
                     className="flex justify-between items-center py-2 border-b border-border last:border-0"
                   >
                     <span className="font-medium text-card-foreground">
-                      {hour.dayName}
+                      {getTranslatedText(hour.dayName)}
                     </span>
                     <span className="text-muted-foreground">
                       {hour.isClosed
