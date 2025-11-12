@@ -1,4 +1,5 @@
 import { useTranslation } from "react-i18next";
+import constitutionPdf from "@/assets/ቃለ ዓዋዲ 2009 ዓ.ም Optimized.pdf";
 
 const About = () => {
   const { t, i18n } = useTranslation();
@@ -38,7 +39,7 @@ const About = () => {
           {t("about.section3Content")}
           {isAmharic && (
             <a
-              href={t("about.paragraph2LinkUrl")}
+              href={constitutionPdf}
               target="_blank"
               rel="noopener noreferrer"
               className="text-primary hover:text-primary/80 underline transition-colors ml-1"
