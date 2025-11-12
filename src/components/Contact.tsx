@@ -67,10 +67,10 @@ const Contact = () => {
                     {t("contact.phone")}
                   </h4>
                   <a
-                    href="tel:+358503405585"
+                    href="tel:+358456987878"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +358 50 340 5585
+                    +358 45 6987878
                   </a>
                 </div>
               </div>
@@ -82,10 +82,10 @@ const Contact = () => {
                     {t("contact.email")}
                   </h4>
                   <a
-                    href="mailto:info@teklehaymanot.fi"
+                    href="mailto:office@teklehaymanot.fi"
                     className="text-muted-foreground hover:text-primary transition-colors break-all"
                   >
-                    info@teklehaymanot.fi
+                    office@teklehaymanot.fi
                   </a>
                 </div>
               </div>
