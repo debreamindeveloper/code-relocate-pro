@@ -4,16 +4,26 @@ import { useTranslation } from "react-i18next";
 import { useQuery } from "@tanstack/react-query";
 import { fetchEvents } from "@/integrations/azure";
 import { Skeleton } from "@/components/ui/skeleton";
+import { useEffect, useState } from "react";
 import {
   Carousel,
   CarouselContent,
   CarouselItem,
-  CarouselPrevious,
-  CarouselNext,
+  type CarouselApi,
 } from "@/components/ui/carousel";
 
 const Events = () => {
   const { t, i18n } = useTranslation();
+  const [api, setApi] = useState<CarouselApi>();
+  const [current, setCurrent] = useState(0);
+
+  useEffect(() => {
+    if (!api) return;
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap());
+    });
+  }, [api]);
 
   const scrollToContact = () => {
     const element = document.getElementById("contact");
@@ -64,6 +74,7 @@ const Events = () => {
         ) : events && events.length > 3 ? (
           <>
             <Carousel
+              setApi={setApi}
               opts={{
                 align: "start",
                 loop: true,
@@ -101,9 +112,21 @@ const Events = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
-              <CarouselPrevious className="hidden md:flex" />
-              <CarouselNext className="hidden md:flex" />
             </Carousel>
+            <div className="flex gap-2 justify-center mt-6">
+              {Array.from({ length: Math.ceil(events.length / 3) }).map((_, index) => (
+                <button
+                  key={index}
+                  onClick={() => api?.scrollTo(index * 3)}
+                  className={`h-3 rounded-full transition-all hover:bg-blue-500 ${
+                    Math.floor(current / 3) === index 
+                      ? "bg-blue-600 w-10" 
+                      : "bg-gray-400 w-3"
+                  }`}
+                  aria-label={`Go to events ${index * 3 + 1}-${Math.min((index + 1) * 3, events.length)}`}
+                />
+              ))}
+            </div>
             <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
               <p className="text-sm text-blue-900">
                 {t("events.notePrefix")}
