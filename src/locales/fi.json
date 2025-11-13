@@ -75,7 +75,8 @@
     "phone": "Puhelin",
     "email": "Sähköposti",
     "verse": "Sillä missä kaksi tai kolme on koolla minun nimessäni, siellä minä olen heidän keskellään. - Matteus 18:20",
-    "openingHours": "Aukioloajat"
+    "openingHours": "Aukioloajat",
+    "closed": "Suljettu"
   },
   "donate": {
     "title": "Tue kirkkoa",
