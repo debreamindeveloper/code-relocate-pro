@@ -22,11 +22,11 @@ const Events = () => {
     const updateVisibleSlides = () => {
       setVisibleSlides(window.innerWidth < 768 ? 1 : 3);
     };
-    
+
     updateVisibleSlides();
-    window.addEventListener('resize', updateVisibleSlides);
-    
-    return () => window.removeEventListener('resize', updateVisibleSlides);
+    window.addEventListener("resize", updateVisibleSlides);
+
+    return () => window.removeEventListener("resize", updateVisibleSlides);
   }, []);
 
   useEffect(() => {
@@ -126,30 +126,32 @@ const Events = () => {
               </CarouselContent>
             </Carousel>
             <div className="flex gap-2 justify-center mt-6">
-              {Array.from({ 
-                length: visibleSlides === 1 
-                  ? events.length 
-                  : Math.ceil(events.length / visibleSlides) 
-              }).map(
-                (_, index) => {
-                  const isActive = visibleSlides === 1 
-                    ? current === index 
+              {Array.from({
+                length:
+                  visibleSlides === 1
+                    ? events.length
+                    : Math.ceil(events.length / visibleSlides),
+              }).map((_, index) => {
+                const isActive =
+                  visibleSlides === 1
+                    ? current === index
                     : Math.floor(current / visibleSlides) === index;
-                  
-                  return (
-                    <button
-                      key={index}
-                      onClick={() => api?.scrollTo(visibleSlides === 1 ? index : index * visibleSlides)}
-                      className={`h-3 rounded-full transition-all hover:bg-blue-500 ${
-                        isActive
-                          ? "bg-blue-600 w-10"
-                          : "bg-gray-400 w-3"
-                      }`}
-                      aria-label={`Go to event ${index + 1}`}
-                    />
-                  );
-                }
-              )}
+
+                return (
+                  <button
+                    key={index}
+                    onClick={() =>
+                      api?.scrollTo(
+                        visibleSlides === 1 ? index : index * visibleSlides
+                      )
+                    }
+                    className={`h-3 rounded-full transition-all hover:bg-blue-500 ${
+                      isActive ? "bg-blue-600 w-10" : "bg-gray-400 w-3"
+                    }`}
+                    aria-label={`Go to event ${index + 1}`}
+                  />
+                );
+              })}
             </div>
             <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
               <p className="text-sm text-blue-900">
