@@ -41,7 +41,7 @@ const Hero = () => {
   const heroImages = [hero1, hero2, hero3, hero4, hero5];
 
   return (
-    <section className="relative flex items-center justify-center overflow-hidden h-[40vh] md:h-[48vh] lg:h-[calc(100vh-175px)]">
+    <section className="relative flex items-center justify-center overflow-hidden h-[33vh] md:h-[65vh] lg:h-[85vh]">
       <Carousel
         setApi={setApi}
         opts={{
