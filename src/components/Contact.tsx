@@ -113,7 +113,7 @@ const Contact = () => {
                     </span>
                     <span className="text-muted-foreground">
                       {hour.isClosed
-                        ? "Closed"
+                        ? t("contact.closed")
                         : `${hour.openTime?.slice(
                             0,
                             5

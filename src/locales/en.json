@@ -75,7 +75,8 @@
     "phone": "Phone",
     "email": "Email",
     "verse": "For where two or three gather in my name, there am I with them. - Matthew 18:20",
-    "openingHours": "Opening Hours"
+    "openingHours": "Opening Hours",
+    "closed": "Closed"
   },
   "donate": {
     "title": "Support Our Church",
