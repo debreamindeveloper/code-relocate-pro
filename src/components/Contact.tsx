@@ -55,7 +55,7 @@ const Contact = () => {
                   <p className="text-muted-foreground">
                     Laurintie 145
                     <br />
-                    01300 Vantaa, Finland
+                    01400 Vantaa, Finland
                   </p>
                 </div>
               </div>
