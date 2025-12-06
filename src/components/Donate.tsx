@@ -34,7 +34,7 @@ const Donate = () => {
             <div className="space-y-4 mb-8">
               <div>
                 <p className="text-sm font-semibold text-foreground mb-1">
-                  {t("donate.bankAccount")}
+                  {t("donate.iban")}
                 </p>
                 <p className="font-mono text-lg text-primary font-bold">
                   FI83 8000 9710 2023 12
@@ -43,7 +43,16 @@ const Donate = () => {
 
               <div>
                 <p className="text-sm font-semibold text-foreground mb-1">
-                  {t("donate.beneficiary")}
+                  {t("donate.bic")}
+                </p>
+                <p className="font-mono text-lg text-primary font-bold">
+                  DABAFIHH
+                </p>
+              </div>
+
+              <div>
+                <p className="text-sm font-semibold text-foreground mb-1">
+                  {t("donate.accountHolder")}
                 </p>
                 <p className="text-foreground">Ethiopian Orthodoks</p>
               </div>
@@ -81,7 +90,7 @@ const Donate = () => {
             <div className="space-y-4 mb-8">
               <div>
                 <p className="text-sm font-semibold text-foreground mb-1">
-                  {t("donate.bankAccount")}
+                  {t("donate.iban")}
                 </p>
                 <p className="font-mono text-lg text-primary font-bold">
                   FI21 8146 9710 2540 86
@@ -90,7 +99,16 @@ const Donate = () => {
 
               <div>
                 <p className="text-sm font-semibold text-foreground mb-1">
-                  {t("donate.beneficiary")}
+                  {t("donate.bic")}
+                </p>
+                <p className="font-mono text-lg text-primary font-bold">
+                  DABAFIHH
+                </p>
+              </div>
+
+              <div>
+                <p className="text-sm font-semibold text-foreground mb-1">
+                  {t("donate.accountHolder")}
                 </p>
                 <p className="text-foreground">Ethiopian Orthodoks</p>
               </div>

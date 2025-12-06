@@ -95,33 +95,81 @@ const Departments = () => {
   const departments = [
     {
       id: 1,
+      name: t("departments.clergy.name"),
+      head: t("departments.clergy.head"),
+      email: t("departments.clergy.email"),
+      phone: t("departments.clergy.phone"),
+    },
+    {
+      id: 2,
+      name: t("departments.sundaySchool.name"),
+      head: t("departments.sundaySchool.head"),
+      email: t("departments.sundaySchool.email"),
+      phone: t("departments.sundaySchool.phone"),
+    },
+    {
+      id: 3,
+      name: t("departments.gospelService.name"),
+      head: t("departments.gospelService.head"),
+      email: t("departments.gospelService.email"),
+      phone: t("departments.gospelService.phone"),
+    },
+    {
+      id: 4,
+      name: t("departments.finance.name"),
+      head: t("departments.finance.head"),
+      email: t("departments.finance.email"),
+      phone: t("departments.finance.phone"),
+    },
+    {
+      id: 5,
+      name: t("departments.buildingAdministration.name"),
+      head: t("departments.buildingAdministration.head"),
+      email: t("departments.buildingAdministration.email"),
+      phone: t("departments.buildingAdministration.phone"),
+    },
+    {
+      id: 6,
       name: t("departments.youth.name"),
       head: t("departments.youth.head"),
       email: t("departments.youth.email"),
       phone: t("departments.youth.phone"),
     },
     {
-      id: 2,
-      name: t("departments.choir.name"),
-      head: t("departments.choir.head"),
-      email: t("departments.choir.email"),
-      phone: t("departments.choir.phone"),
+      id: 7,
+      name: t("departments.development.name"),
+      head: t("departments.development.head"),
+      email: t("departments.development.email"),
+      phone: t("departments.development.phone"),
     },
     {
-      id: 3,
-      name: t("departments.children.name"),
-      head: t("departments.children.head"),
-      email: t("departments.children.email"),
-      phone: t("departments.children.phone"),
+      id: 8,
+      name: t("departments.cashier2.name"),
+      head: t("departments.cashier2.head"),
+      email: t("departments.cashier2.email"),
+      phone: t("departments.cashier2.phone"),
     },
     {
-      id: 4,
-      name: t("departments.welfare.name"),
-      head: t("departments.welfare.head"),
-      email: t("departments.welfare.email"),
-      phone: t("departments.welfare.phone"),
+      id: 9,
+      name: t("departments.buildingCommittee.name"),
+      head: t("departments.buildingCommittee.head"),
+      email: t("departments.buildingCommittee.email"),
+      phone: t("departments.buildingCommittee.phone"),
+    },
+    {
+      id: 10,
+      name: t("departments.ict.name"),
+      head: t("departments.ict.head"),
+      email: t("departments.ict.email"),
+      phone: t("departments.ict.phone"),
     },
   ];
+
+  const getVisibleSlides = () => {
+    if (window.innerWidth >= 1024) return 3;
+    if (window.innerWidth >= 768) return 2;
+    return 1;
+  };
 
   return (
     <section id="departments" className="py-20 px-4 bg-background">

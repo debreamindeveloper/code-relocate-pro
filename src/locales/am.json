@@ -118,7 +118,7 @@
         "phone": "+358 40 7022499"
       }
     },
-     "clergy": {
+    "clergy": {
       "name": "የካህናት አገልግሎት ክፍል",
       "head": "ቀሲስ ዓለምነው ሽፈራው (ዶ/ር)",
       "email": "alemnew.sheferaw@teklehaymanot.fi",
@@ -148,7 +148,7 @@
       "email": "beselam.asefa@teklehaymanot.fi",
       "phone": "+358 45 6994599"
     },
-     "youth": {
+    "youth": {
       "name": "የተተኪ ትውልድ ክፍል",
       "head": "ወ/ሮ ሜሮን እሸቱ",
       "email": "meron.eshetu@teklehaymanot.fi",
@@ -160,24 +160,24 @@
       "email": "amit.kahsay@teklehaymanot.fi",
       "phone": "+358 44 9747190"
     },
-   "cashier2": {
-        "role": "ገንዘብ ያዢ",
-        "name": "አቶ ኤፍሬም ሽፈራው",
-        "email": "ephrem.shiferaw@teklehaymanot.fi",
-        "phone": "todo"
-      },
-      "buildingCommittee": {
-        "role": "የሕንጻ ግዢ ኮሚቴ",
-        "name": "አቶ ሳሙኤል ያሬድ",
-        "email": "samuel.yared@teklehaymanot.fi",
-        "phone": "+358 40 5751516"
-      },
-      "ict": {
-        "role": "የመረጃና ግንኙነት ክፍል",
-        "name": "አቶ ቴድሮስ መንገሻ",
-        "email": "tewodros.mengesha@teklehaymanot.fi",
-        "phone": "+358 45 1684822"
-      }
+    "cashier2": {
+      "name": "ገንዘብ ያዢ",
+      "head": "አቶ ኤፍሬም ሽፈራው",
+      "email": "ephrem.shiferaw@teklehaymanot.fi",
+      "phone": "todo"
+    },
+    "buildingCommittee": {
+      "name": "የሕንጻ ግዢ ኮሚቴ",
+      "head": "አቶ ሳሙኤል ያሬድ",
+      "email": "samuel.yared@teklehaymanot.fi",
+      "phone": "+358 40 5751516"
+    },
+    "ict": {
+      "name": "የመረጃና ግንኙነት ክፍል",
+      "head": "አቶ ቴድሮስ መንገሻ",
+      "email": "tewodros.mengesha@teklehaymanot.fi",
+      "phone": "+358 45 1684822"
+    }
   },
   "map": {
     "title": "ይጎብኙን",
@@ -202,12 +202,13 @@
       "description": "የቤተ ክርስቲያናችንን ዕለታዊ ሥራዎችን ይደግፉ፣ ይህም የሥራዓተ አምልኮ አገልግሎቶች፣ የሕጻናት፣ አዳጊ ልጆች እና ወጣቶች ትምህርትና ስልጠና፣ ልዩ ልዩ መርሐ ግብሮችን ያካትታል።"
     },
     "buildingAccount": {
-      "title": "የሕንጻ ግዢ ኮሚቴ",
-      "description": "አዲስ ቤተ ክርስቲያን ቤት ለመግዛት ይረዳን ዘንድ የቻሉትን ያክል አስተዋጽኦ በማድረግ ያግዙን።"
+      "title": "የህንጻ ግኢ ኮሚቴ",
+      "description": "አዲስ ቤተ ክርስቲያን ቤት ለመግዛት ይርዳን ዘንድ የቻሉትን ያክል አስተዋጽኦ በማድረግ ያግዙን።"
     },
-    "bankAccount": "የባንክ ሂሳብ:",
-    "beneficiary": "ተጠቃሚ:",
-    "reference": "ማጣቀሻ:",
+    "iban": "IBAN:",
+    "bic": "BIC:",
+    "accountHolder": "የሂሳብ አዥማጪ:",
+    "reference": "ማቃቀሻ:",
     "qrCodePlaceholder": "ለመለገስ ስካን ያድርጉ (ምትክ - ትክክለኛ QR ኮድ በቅርቡ ይመጣል)",
     "noQrCode": "ባንክ ዝውውር ብቻ - ለዚህ ሂሳብ QR ኮድ አይገኝም",
     "thankYou": "ለሚሰጡን ድጋፍ በእግዚአብሔር ስም እናመሰግናለን። ልገሳዎ በአገልግሎታችን ላይ ትክክለኛ ለውጥ ያመጣል።"
@@ -217,10 +218,11 @@
     "tagline": "በእምነት እያደግን፣ በፍቅር እናገለግላለን",
     "rights": "መብቶች የተጠበቁ ናቸው",
     "donate": {
-      "title": "ቤተ ክርስቲያናችንን ደግፉ",
-      "description": "ልገሳዎ አገልግሎታችንን እንድንቀጥል ይረዳናል",
-      "bankAccount": "የባንክ ሂሳብ:",
-      "beneficiary": "ተጠቃሚ:"
+      "title": "ቤተ ክርስቲያናችን ደግፉ",
+      "description": "ልገሳው አገልግሎታችን እንድንቀጥል ይርዳናል",
+      "iban": "IBAN:",
+      "bic": "BIC:",
+      "accountHolder": "የሂሳብ አዥማጪ:"
     }
   }
 }
