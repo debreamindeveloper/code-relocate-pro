@@ -205,7 +205,7 @@ const Departments = () => {
                     key={index}
                     className="pl-2 md:pl-4 basis-full md:basis-1/3"
                   >
-                    <Card className="p-6 hover:shadow-lg transition-all hover:-translate-y-1 bg-secondary/5 border-secondary/20 border-4 h-full">
+                    <Card className="p-6 hover:shadow-lg transition-all hover:-translate-y-1 bg-card border-border h-full">
                       <div className="mb-4">
                         <h4 className="text-lg font-bold text-card-foreground">
                           {member.role}
@@ -276,7 +276,7 @@ const Departments = () => {
                     key={dept.id}
                     className="pl-2 md:pl-4 basis-full md:basis-1/3"
                   >
-                    <Card className="p-6 hover:shadow-lg transition-all hover:-translate-y-1 bg-secondary/5 border-secondary/20 border-4 h-full">
+                    <Card className="p-6 hover:shadow-lg transition-all hover:-translate-y-1 bg-card border-border h-full">
                       <div className="mb-4">
                         <h4 className="text-lg font-bold text-card-foreground">
                           {dept.name}

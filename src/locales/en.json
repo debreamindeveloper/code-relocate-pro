@@ -77,45 +77,45 @@
       "name": "Parish Council",
       "chair": {
         "role": "Chairperson",
-        "name": "John Doe",
-        "email": "chair@teklehaymanot.fi",
-        "phone": "+358 45 1111111"
+        "name": "Rev. Fr Lema Besufekad",
+        "email": "lema.besufikad@teklehaymanot.fi",
+        "phone": "+358 40 684226"
       },
       "viceChair": {
         "role": "Vice Chairperson",
-        "name": "Jane Smith",
-        "email": "vicechair@teklehaymanot.fi",
-        "phone": "+358 45 2222222"
+        "name": "Aman?? (conflicting names)",
+        "email": "amanuel.kebede@teklehaymanot.fi",
+        "phone": "+358 44 5400490"
       },
       "secretary": {
         "role": "Secretary",
-        "name": "Bob Wilson",
-        "email": "secretary@teklehaymanot.fi",
-        "phone": "+358 45 3333333"
+        "name": "Father Dr. Alemnew Sheferaw",
+        "email": "alemnew.sheferaw@teklehaymanot.fi",
+        "phone": "+358 45 6987878"
       },
       "member": {
         "role": "Member",
-        "name": "Member Name",
-        "email": "member@teklehaymanot.fi",
-        "phone": "+358 45 4444444"
+        "name": "Kesis Eshete Tesfaye",
+        "email": "eshete.tesfaye@teklehaymanot.fi",
+        "phone": "+358 44 5119020"
       },
       "financeHead": {
         "role": "Finance Head",
-        "name": "Finance Name",
-        "email": "finance@teklehaymanot.fi",
-        "phone": "+358 45 5555555"
+        "name": "Dn. Hailay Atsbeha",
+        "email": "hailay.atsbeha@teklehaymanot.fi",
+        "phone": "todo"
       },
       "cashier": {
         "role": "Cashier",
-        "name": "Cashier Name",
-        "email": "cashier@teklehaymanot.fi",
-        "phone": "+358 45 6666666"
+        "name": "Ephrem Shiferaw",
+        "email": "ephrem.shiferaw@teklehaymanot.fi",
+        "phone": "todo"
       },
       "member2": {
         "role": "Member",
-        "name": "Member Name 2",
-        "email": "member2@teklehaymanot.fi",
-        "phone": "+358 45 7777777"
+        "name": "Dawit Solomon",
+        "email": "dawit.solomon@teklehaymanot.fi",
+        "phone": "+358 40 7022499"
       }
     },
     "youth": {

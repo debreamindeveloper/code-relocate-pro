@@ -77,39 +77,39 @@
       "name": "Seurakuntaneuvosto",
       "chair": {
         "role": "Puheenjohtaja",
-        "name": "John Doe",
-        "email": "chair@teklehaymanot.fi",
-        "phone": "+358 45 1111111"
+        "name": "Reverend Fr Lema Besufekad",
+        "email": "lema.besufikad@teklehaymanot.fi",
+        "phone": "+358 40 684226"
       },
       "viceChair": {
         "role": "Varapuheenjohtaja",
-        "name": "Jane Smith",
-        "email": "vicechair@teklehaymanot.fi",
-        "phone": "+358 45 2222222"
+        "name": "Aman?? (conflicting names)",
+        "email": "amanuel.kebede@teklehaymanot.fi",
+        "phone": "+358 44 5400490"
       },
       "secretary": {
         "role": "Sihteeri",
-        "name": "Bob Wilson",
-        "email": "secretary@teklehaymanot.fi",
-        "phone": "+358 45 3333333"
+        "name": "Father Dr. Alemnew Sheferaw",
+        "email": "alemnew.sheferaw@teklehaymanot.fi",
+        "phone": "+358 45 6987878"
       },
       "member": {
         "role": "Jäsen",
-        "name": "Jäsenen Nimi",
-        "email": "member@teklehaymanot.fi",
-        "phone": "+358 45 4444444"
+        "name": "Father Eshete Tesfaye",
+        "email": "eshete.tesfaye@teklehaymanot.fi",
+        "phone": "+358 44 5119020"
       },
       "financeHead": {
         "role": "Talouspäällikkö",
-        "name": "Talous Nimi",
-        "email": "finance@teklehaymanot.fi",
-        "phone": "+358 45 5555555"
+         "name": "Ephrem Shiferaw",
+        "email": "ephrem.shiferaw@teklehaymanot.fi",
+        "phone": "todo"
       },
       "cashier": {
         "role": "Kassanhoitaja",
-        "name": "Kassanhoitajan Nimi",
-        "email": "cashier@teklehaymanot.fi",
-        "phone": "+358 45 6666666"
+        "name": "Dawit Solomon",
+        "email": "dawit.solomon@teklehaymanot.fi",
+        "phone": "+358 40 7022499"
       },
       "member2": {
         "role": "Jäsen",
