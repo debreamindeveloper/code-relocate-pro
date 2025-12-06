@@ -9,6 +9,8 @@ import {
   Carousel,
   CarouselContent,
   CarouselItem,
+  CarouselPrevious,
+  CarouselNext,
   type CarouselApi,
 } from "@/components/ui/carousel";
 
@@ -91,7 +93,7 @@ const Events = () => {
                 align: "start",
                 loop: true,
               }}
-              className="w-full"
+              className="w-full relative"
             >
               <CarouselContent className="-ml-2 md:-ml-4">
                 {events.map((event) => (
@@ -124,35 +126,9 @@ const Events = () => {
                   </CarouselItem>
                 ))}
               </CarouselContent>
+              <CarouselPrevious className="left-0 md:-left-12 lg:-left-16" />
+              <CarouselNext className="right-0 md:-right-12 lg:-right-16" />
             </Carousel>
-            <div className="flex gap-2 justify-center mt-6">
-              {Array.from({
-                length:
-                  visibleSlides === 1
-                    ? events.length
-                    : Math.ceil(events.length / visibleSlides),
-              }).map((_, index) => {
-                const isActive =
-                  visibleSlides === 1
-                    ? current === index
-                    : Math.floor(current / visibleSlides) === index;
-
-                return (
-                  <button
-                    key={index}
-                    onClick={() =>
-                      api?.scrollTo(
-                        visibleSlides === 1 ? index : index * visibleSlides
-                      )
-                    }
-                    className={`h-3 rounded-full transition-all hover:bg-blue-500 ${
-                      isActive ? "bg-blue-600 w-10" : "bg-gray-400 w-3"
-                    }`}
-                    aria-label={`Go to event ${index + 1}`}
-                  />
-                );
-              })}
-            </div>
             <div className="mt-8 p-4 bg-blue-50 border border-blue-200 rounded-lg">
               <p className="text-sm text-blue-900">
                 {t("events.notePrefix")}

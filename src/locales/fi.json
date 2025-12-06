@@ -63,6 +63,86 @@
     "noteLinkText": "aukioloajat",
     "noteSuffix": "-osiosta."
   },
+  "departments": {
+    "title": "Osastomme",
+    "subtitle": "Ota yhteyttä palvelujohtajiimme",
+    "departmentsTitle": "Osastot",
+    "generalAssembly": {
+      "name": "Yleiskokous",
+      "head": "Kaikki seurakunnan jäsenet",
+      "email": "info@teklehaymanot.fi",
+      "phone": "+358 45 1234567"
+    },
+    "parishCouncil": {
+      "name": "Seurakuntaneuvosto",
+      "chair": {
+        "role": "Puheenjohtaja",
+        "name": "John Doe",
+        "email": "chair@teklehaymanot.fi",
+        "phone": "+358 45 1111111"
+      },
+      "viceChair": {
+        "role": "Varapuheenjohtaja",
+        "name": "Jane Smith",
+        "email": "vicechair@teklehaymanot.fi",
+        "phone": "+358 45 2222222"
+      },
+      "secretary": {
+        "role": "Sihteeri",
+        "name": "Bob Wilson",
+        "email": "secretary@teklehaymanot.fi",
+        "phone": "+358 45 3333333"
+      },
+      "member": {
+        "role": "Jäsen",
+        "name": "Jäsenen Nimi",
+        "email": "member@teklehaymanot.fi",
+        "phone": "+358 45 4444444"
+      },
+      "financeHead": {
+        "role": "Talouspäällikkö",
+        "name": "Talous Nimi",
+        "email": "finance@teklehaymanot.fi",
+        "phone": "+358 45 5555555"
+      },
+      "cashier": {
+        "role": "Kassanhoitaja",
+        "name": "Kassanhoitajan Nimi",
+        "email": "cashier@teklehaymanot.fi",
+        "phone": "+358 45 6666666"
+      },
+      "member2": {
+        "role": "Jäsen",
+        "name": "Jäsenen Nimi 2",
+        "email": "member2@teklehaymanot.fi",
+        "phone": "+358 45 7777777"
+      }
+    },
+    "youth": {
+      "name": "Nuorisotoiminta",
+      "head": "John Doe",
+      "email": "youth@teklehaymanot.fi",
+      "phone": "+358 45 1234567"
+    },
+    "choir": {
+      "name": "Kuoro",
+      "head": "Jane Smith",
+      "email": "choir@teklehaymanot.fi",
+      "phone": "+358 45 2345678"
+    },
+    "children": {
+      "name": "Lapsityö",
+      "head": "Mary Johnson",
+      "email": "children@teklehaymanot.fi",
+      "phone": "+358 45 3456789"
+    },
+    "welfare": {
+      "name": "Hyvinvointitoimikunta",
+      "head": "Peter Anderson",
+      "email": "welfare@teklehaymanot.fi",
+      "phone": "+358 45 4567890"
+    }
+  },
   "map": {
     "title": "Käy vieraile meillä",
     "loading": "Ladataan karttaa...",
