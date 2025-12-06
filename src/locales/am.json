@@ -63,6 +63,122 @@
     "noteLinkText": "የመክፈቻ ሰዓታት",
     "noteSuffix": " ክፍልን ይመልከቱ። "
   },
+  "departments": {
+    "title": "የቤተ ክርስቲያናችን ክፍሎች",
+    "subtitle": "ከአገልግሎት መሪዎቻችን ጋር ይገናኙ",
+    "departmentsTitle": "ክፍሎች",
+    "generalAssembly": {
+      "name": "ጠቅላላ ጉባዔ",
+      "head": "ሁሉም የቤተ ክርስቲያን አባላት",
+      "email": "info@teklehaymanot.fi",
+      "phone": "+358 45 1234567"
+    },
+    "parishCouncil": {
+      "name": "የቤተ ክርስቲያናችን የሰበካ መንፈሳዊ አስተዳደር ጉባኤ",
+      "chair": {
+        "role": "አስተዳዳሪ",
+        "name": "መልአከ አሚን ለማ በሱፍቃድ",
+        "email": "lema.besufikad@teklehaymanot.fi",
+        "phone": "+358 40 684226"
+      },
+      "viceChair": {
+        "role": "ምክትል አስተዳዳሪ",
+        "name": "አቶ አማረ ካሳ",
+        "email": "amanuel.kebede@teklehaymanot.fi",
+        "phone": "+358 44 5400490"
+      },
+      "secretary": {
+        "role": "ዋና ጸሐፊ",
+        "name": "ቀሲስ ዓለምነው ሽፈራው (ዶ/ር)",
+        "email": "alemnew.sheferaw@teklehaymanot.fi",
+        "phone": "+358 45 6987878"
+      },
+      "member": {
+        "role": "አባል",
+        "name": "ቄሰ ገበዝ እሸቴ ተስፋዬ",
+        "email": "eshete.tesfaye@teklehaymanot.fi",
+        "phone": "+358 44 5119020"
+      },
+      "financeHead": {
+        "role": "ሂሳብ ክፍል ሓላፊ",
+        "name": "ዲ/ን ኃይላይ አጽብሃ",
+        "email": "hailay.atsbeha@teklehaymanot.fi",
+        "phone": "todo"
+      },
+      "cashier": {
+        "role": "ገንዘብ ያዢ",
+        "name": "አቶ ኤፍሬም ሽፈራው",
+        "email": "ephrem.shiferaw@teklehaymanot.fi",
+        "phone": "todo"
+      },
+      "member2": {
+        "role": "አባል",
+        "name": "አቶ ዳዊት ሰሎሞን",
+        "email": "dawit.solomon@teklehaymanot.fi",
+        "phone": "+358 40 7022499"
+      }
+    },
+    "clergy": {
+      "name": "የካህናት አገልግሎት ክፍል",
+      "head": "ቀሲስ ዓለምነው ሽፈራው (ዶ/ር)",
+      "email": "alemnew.sheferaw@teklehaymanot.fi",
+      "phone": "+358 45 6987878"
+    },
+    "sundaySchool": {
+      "name": "የሰ/ት/ቤት",
+      "head": " ቄሰ ገበዝ እሸቴ ተስፋየ",
+      "email": "eshete.tesfaye@teklehaymanot.fi",
+      "phone": "+358 44 5119020"
+    },
+    "gospelService": {
+      "name": "የስብከተ ወንጌል ክፍል",
+      "head": "ዲ/ን ጌታሰው ተድላ",
+      "email": "getasew.tedla@teklehaymanot.fi",
+      "phone": "todo"
+    },
+    "finance": {
+      "name": "የሂሳብና ንብረት ክፍል",
+      "head": "ዲ/ን ኃይላይ አጽብሃ",
+      "email": "hailay.atsbeha@teklehaymanot.fi",
+      "phone": "todo"
+    },
+    "buildingAdministration": {
+      "name": "የሕንጻ አስተዳደር ክፍል",
+      "head": "አቶ በሰላም ግዛቸው",
+      "email": "beselam.asefa@teklehaymanot.fi",
+      "phone": "+358 45 6994599"
+    },
+    "youth": {
+      "name": "የተተኪ ትውልድ ክፍል",
+      "head": "ወ/ሮ ሜሮን እሸቱ",
+      "email": "meron.eshetu@teklehaymanot.fi",
+      "phone": "+358 44 0865272"
+    },
+    "development": {
+      "name": "የልማት ክፍል",
+      "head": "ወ/ሮ አሚት ካህሳይ",
+      "email": "amit.kahsay@teklehaymanot.fi",
+      "phone": "+358 44 9747190"
+    },
+    "cashier2": {
+      "name": "ገንዘብ ያዢ",
+      "head": "አቶ ኤፍሬም ሽፈራው",
+      "email": "ephrem.shiferaw@teklehaymanot.fi",
+      "phone": "todo"
+    },
+    "buildingCommittee": {
+      "name": "የሕንጻ ግዢ ኮሚቴ",
+      "head": "አቶ ሳሙኤል ያሬድ",
+      "email": "samuel.yared@teklehaymanot.fi",
+      "phone": "+358 40 5751516"
+    },
+    "ict": {
+      "name": "የመረጃና ግንኙነት ክፍል",
+      "head": "አቶ ቴድሮስ መንገሻ",
+      "email": "tewodros.mengesha@teklehaymanot.fi",
+      "phone": "+358 45 1684822"
+    }
+  },
   "map": {
     "title": "ይጎብኙን",
     "loading": "ካርታን በመጫን ላይ...",
@@ -74,7 +190,7 @@
     "address": "አድራሻ",
     "phone": "ስልክ",
     "email": "ኢሜል",
-    "verse": "ሁለት ወይም ሦስት በስሜ ሲሰበሰቡ እኔም በመካከላቸው አለሁ።  ማቴዎስ 18:20",
+    "verse": "ሁለት ወይም ሦስት በስሜ በሚሰበሰቡበት አኔ በዚያ በመካከላቸው እኖራለሁ። ማቴዎስ 18:20",
     "openingHours": "ቤተ ክርስቲያኑ ክፍት የሚሆንበት ሰዓት",
     "closed": "ዝግ ነው"
   },
@@ -86,12 +202,13 @@
       "description": "የቤተ ክርስቲያናችንን ዕለታዊ ሥራዎችን ይደግፉ፣ ይህም የሥራዓተ አምልኮ አገልግሎቶች፣ የሕጻናት፣ አዳጊ ልጆች እና ወጣቶች ትምህርትና ስልጠና፣ ልዩ ልዩ መርሐ ግብሮችን ያካትታል።"
     },
     "buildingAccount": {
-      "title": "የሕንጻ ግዢ ኮሚቴ",
-      "description": "አዲስ ቤተ ክርስቲያን ቤት ለመግዛት ይረዳን ዘንድ የቻሉትን ያክል አስተዋጽኦ በማድረግ ያግዙን።"
+      "title": "የህንጻ ግኢ ኮሚቴ",
+      "description": "አዲስ ቤተ ክርስቲያን ቤት ለመግዛት ይርዳን ዘንድ የቻሉትን ያክል አስተዋጽኦ በማድረግ ያግዙን።"
     },
-    "bankAccount": "የባንክ ሂሳብ:",
-    "beneficiary": "ተጠቃሚ:",
-    "reference": "ማጣቀሻ:",
+    "iban": "IBAN:",
+    "bic": "BIC:",
+    "accountHolder": "የሂሳብ አዥማጪ:",
+    "reference": "ማቃቀሻ:",
     "qrCodePlaceholder": "ለመለገስ ስካን ያድርጉ (ምትክ - ትክክለኛ QR ኮድ በቅርቡ ይመጣል)",
     "noQrCode": "ባንክ ዝውውር ብቻ - ለዚህ ሂሳብ QR ኮድ አይገኝም",
     "thankYou": "ለሚሰጡን ድጋፍ በእግዚአብሔር ስም እናመሰግናለን። ልገሳዎ በአገልግሎታችን ላይ ትክክለኛ ለውጥ ያመጣል።"
@@ -101,10 +218,11 @@
     "tagline": "በእምነት እያደግን፣ በፍቅር እናገለግላለን",
     "rights": "መብቶች የተጠበቁ ናቸው",
     "donate": {
-      "title": "ቤተ ክርስቲያናችንን ደግፉ",
-      "description": "ልገሳዎ አገልግሎታችንን እንድንቀጥል ይረዳናል",
-      "bankAccount": "የባንክ ሂሳብ:",
-      "beneficiary": "ተጠቃሚ:"
+      "title": "ቤተ ክርስቲያናችን ደግፉ",
+      "description": "ልገሳው አገልግሎታችን እንድንቀጥል ይርዳናል",
+      "iban": "IBAN:",
+      "bic": "BIC:",
+      "accountHolder": "የሂሳብ አዥማጪ:"
     }
   }
 }

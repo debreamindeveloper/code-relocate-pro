@@ -6,7 +6,7 @@ const About = () => {
   const isAmharic = i18n.language === "am";
 
   return (
-    <section id="about" className="pt-20 pb-20 px-4 bg-white">
+    <section id="about"  className="relative z-10 -mt-6 md:-mt-10 px-4 md:px-8 lg:px-16">
       <div className="max-w-6xl mx-auto text-justify">
         <h2 className="text-4xl md:text-5xl font-bold text-foreground mb-6 text-center">
           {t("about.title")}
