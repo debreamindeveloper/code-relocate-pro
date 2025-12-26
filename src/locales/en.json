@@ -210,7 +210,7 @@
     "iban": "IBAN:",
     "bic": "BIC:",
     "accountHolder": "Account holder:",
-    "reference": "Donation for daily operation:",
+    "reference": "Message:",
     "qrCodePlaceholder": "Scan to donate (Placeholder - Real QR code coming soon)",
     "noQrCode": "Bank transfer only - No QR code available for this account",
     "thankYou": "We thank you in the name of God for your support. Your gift makes a real difference in our ministry."
