@@ -24,7 +24,9 @@
     "section3Title": "Constitution and Administrative Bylaws",
     "section3Content": "The Constitution and Administrative Bylaws of Debre Amin Abune Tekle Haymanot Church in Helsinki were drafted and established from the time of its foundation to guide the life and service of the parish. These bylaws have been periodically revised and updated, ensuring that the governance of the church remains faithful to its mission and responsive to the needs of the faithful. The guiding constitution has been carefully prepared and preserved so that the ministry of the local church may continue to expand and flourish, safeguarding the spiritual heritage and strengthening the service offered to the community. ",
     "paragraph2LinkText": "Click here",
-    "paragraph2LinkUrl": "https://teams.microsoft.com/l/file/dummy-pdf-link"
+    "paragraph2LinkUrl": "https://teams.microsoft.com/l/file/dummy-pdf-link",
+    "paragraph3LinkText": "Administrative Bylaws",
+    "paragraph3LinkUrl": "/src/assets/toWEBP/የተሻሻለው_መተዳደሪያ_ደንብ_ሕዳር_2024.pdf"
   },
   "services": {
     "title": "Our Ministries",
@@ -77,25 +79,25 @@
       "name": "Parish Council",
       "chair": {
         "role": "Chairperson",
-        "name": "Rev. Fr. Lema Besufikad",
+        "name": "Fr. Lema Besufikad",
         "email": "lema.besufikad@teklehaymanot.fi",
         "phone": "+358 40 684226"
       },
       "viceChair": {
         "role": "Vice Chairperson",
-        "name": "Aman?? (conflicting names)",
+        "name": "Amare Kassa",
         "email": "amanuel.kebede@teklehaymanot.fi",
         "phone": "+358 44 5400490"
       },
       "secretary": {
         "role": "Secretary",
-        "name": "Father Dr. Alemnew Sheferaw",
+        "name": "Fr. Alemnew Sheferaw (PhD)",
         "email": "alemnew.sheferaw@teklehaymanot.fi",
         "phone": "+358 45 6987878"
       },
       "member": {
         "role": "Member",
-        "name": "Kesis Eshete Tesfaye",
+        "name": "Fr. Eshete Tesfaye",
         "email": "eshete.tesfaye@teklehaymanot.fi",
         "phone": "+358 44 5119020"
       },
@@ -215,7 +217,7 @@
   },
   "footer": {
     "churchName": "Our Church",
-    "tagline": "Debre Amin Abune Tekle Haymanot Church, Helsinki, Finland Growing in faith, serving in love  ",
+    "tagline": "Debre Amin Abune Tekle Haymanot Church, Helsinki, Finland. Business ID: 2732891-1 ",
     "rights": "All rights reserved",
     "donate": {
       "title": "Support Our Church",

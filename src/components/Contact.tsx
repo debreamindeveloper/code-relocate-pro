@@ -67,10 +67,10 @@ const Contact = () => {
                     {t("contact.phone")}
                   </h4>
                   <a
-                    href="tel:+358456987878"
+                    href="tel:+3584578352700"
                     className="text-muted-foreground hover:text-primary transition-colors"
                   >
-                    +358 45 6987878
+                    +358 457 835 2700
                   </a>
                 </div>
               </div>
