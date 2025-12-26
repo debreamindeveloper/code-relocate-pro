@@ -68,7 +68,7 @@ const Donate = () => {
             {/* Mobile Pay */}
             <div className="text-center">
               <p className="text-sm font-semibold text-foreground mb-1">
-                Mobile Pay
+                MobilePay
               </p>
               <p className="font-mono text-lg text-primary font-bold">83818</p>
             </div>
@@ -124,7 +124,7 @@ const Donate = () => {
             {/* Mobile Pay */}
             <div className="text-center">
               <p className="text-sm font-semibold text-foreground mb-1">
-                Mobile Pay
+                MobilePay
               </p>
               <p className="font-mono text-lg text-primary font-bold">21814</p>
             </div>

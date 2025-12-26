@@ -42,7 +42,7 @@
       "description": "ወደ ቱርኩ ፣ ታምፔሬ ፣ ቫሳ እንዲሁም ሌሎችም ከተሞች።"
     },
     "choir": {
-      "title": "የበገና መዝሙር",
+      "title": "መዝሙር",
       "description": "የጽጌ ሃይማኖት ሰንበት ትምህርት ቤት መዘምራን።"
     },
     "childrens": {
@@ -70,7 +70,7 @@
     "generalAssembly": {
       "name": "ጠቅላላ ጉባዔ",
       "head": "ሁሉም የቤተ ክርስቲያን አባላት",
-      "email": "info@teklehaymanot.fi",
+      "email": "office@teklehaymanot.fi",
       "phone": "+358 45 1234567"
     },
     "parishCouncil": {
@@ -103,13 +103,13 @@
         "role": "ሂሳብ ክፍል ሓላፊ",
         "name": "ዲ/ን ኃይላይ አጽብሃ",
         "email": "hailay.atsbeha@teklehaymanot.fi",
-        "phone": "todo"
+        "phone": "+358 469498840"
       },
       "cashier": {
         "role": "ገንዘብ ያዢ",
         "name": "አቶ ኤፍሬም ሽፈራው",
         "email": "ephrem.shiferaw@teklehaymanot.fi",
-        "phone": "todo"
+        "phone": "+358 406 453 223"
       },
       "member2": {
         "role": "አባል",
@@ -140,7 +140,7 @@
       "name": "የሂሳብና ንብረት ክፍል",
       "head": "ዲ/ን ኃይላይ አጽብሃ",
       "email": "hailay.atsbeha@teklehaymanot.fi",
-      "phone": "todo"
+      "phone": "+358 449 714 930"
     },
     "buildingAdministration": {
       "name": "የሕንጻ አስተዳደር ክፍል",
@@ -164,7 +164,7 @@
       "name": "ገንዘብ ያዢ",
       "head": "አቶ ኤፍሬም ሽፈራው",
       "email": "ephrem.shiferaw@teklehaymanot.fi",
-      "phone": "todo"
+      "phone": "+358 406 453 223"
     },
     "buildingCommittee": {
       "name": "የሕንጻ ግዢ ኮሚቴ",
@@ -207,8 +207,8 @@
     },
     "iban": "IBAN:",
     "bic": "BIC:",
-    "accountHolder": "የሂሳብ አዥማጪ:",
-    "reference": "ማቃቀሻ:",
+    "accountHolder": "የሂሳብ ባለቤት",
+    "reference": "ለዕለት",
     "qrCodePlaceholder": "ለመለገስ ስካን ያድርጉ (ምትክ - ትክክለኛ QR ኮድ በቅርቡ ይመጣል)",
     "noQrCode": "ባንክ ዝውውር ብቻ - ለዚህ ሂሳብ QR ኮድ አይገኝም",
     "thankYou": "ለሚሰጡን ድጋፍ በእግዚአብሔር ስም እናመሰግናለን። ልገሳዎ በአገልግሎታችን ላይ ትክክለኛ ለውጥ ያመጣል።"

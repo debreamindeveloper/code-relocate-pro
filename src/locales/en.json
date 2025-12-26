@@ -18,7 +18,7 @@
     "title": "About Our Church",
     "paragraph1": "Debre Amin Abune Tekle Haymanot Church in Helsinki, Finland under The Ethiopian Orthodox Tewahedo Church Diocese of the Nordic Countries and Greece, Stockholm, was established as a community in 1992 by Orthodox Christians living in Finland, especially by those living in the Helsinki Metropolitan area.When the community was founded, its main purpose was to preserve and pass on to the next generation the faith, church traditions, and moral conduct inherited from their forefathers, together with their history, culture, and language. After serving in various capacities for many years, on June 12, 2011, by the grace of God, His Eminence Abune Entons (Anthony), who was then the Archbishop of Northern and Western Europe, visited Helsinki and elevated the community to the status of a Church, naming it Debre Amin Abune Tekle Haymanot Church. The Church then fulfilled all the legal requirements and received official recognition in Finland. ",
     "section1Title": "The Clergy and the faithful servants of our Church",
-    "section1Content": "Since its establishment, the Church has steadily grown in its ministry, expanding both its services and the number of faithful and clergy. Up until 2015, members of the Clergy from other European countries rotated to provide the teaching of the Gospel and the celebration of the Divine Liturgy. From November 2015 onward, by the blessing of the hierarchy, the Church has been shepherded by its Priest and Parish Administrator, Reverend Fr. Melake Amin Lema Besufekad, who continues to serve faithfully to this day.  At present, the Church is blessed with four Priests, one Chief Cantor, ten Deacons, and hundreds of devoted faithful who together uphold the life of worship and service.  ",
+    "section1Content": "Since its establishment, the Church has steadily grown in its ministry, expanding both its services and the number of faithful and clergy. Up until 2015, members of the Clergy from other European countries rotated to provide the teaching of the Gospel and the celebration of the Divine Liturgy. From November 2015 onward, by the blessing of the hierarchy, the Church has been shepherded by its Priest and Parish Administrator, Reverend Fr. Melake Amin Lema Besufikad, who continues to serve faithfully to this day.  At present, the Church is blessed with four Priests, one Chief Cantor, ten Deacons, and hundreds of devoted faithful who together uphold the life of worship and service.  ",
     "section2Title": "Places of Worship and Liturgical Services  ",
     "section2Content": "From its founding until August 2023, the Church held its services in spaces graciously provided by the Finnish Orthodox Church, available for limited time periods—typically once or twice a month. However, in August of 2023, through the blessing of His Eminence Abune Elias, Archbishop of the Ethiopian Orthodox Tewahedo Church Diocese of the Nordic Countries and Greece, Stockholm, our Church received a permanent place of worship in a rented building, which continues to serve as its home.  On this foundation, the Divine Liturgy is celebrated every Sunday, as well as on major feast days such as the Feast of St. Michael in November and June (Turku), the Feast of St. Gabriel in December and July (Vaasa), and the Feast of St. Virgin Mary in February and August (Tampere). The Church plans to extend its services to additional cities across Finland.  At the present, the Church is also engaged in a major initiative to acquire its own permanent building, ensuring a lasting home for worship, fellowship, and the transmission of the Orthodox faith to future generations.  ",
     "section3Title": "Constitution and Administrative Bylaws",
@@ -77,7 +77,7 @@
       "name": "Parish Council",
       "chair": {
         "role": "Chairperson",
-        "name": "Rev. Fr. Lema Besufekad",
+        "name": "Rev. Fr. Lema Besufikad",
         "email": "lema.besufikad@teklehaymanot.fi",
         "phone": "+358 40 684226"
       },
@@ -208,7 +208,7 @@
     "iban": "IBAN:",
     "bic": "BIC:",
     "accountHolder": "Account holder:",
-    "reference": "Reference:",
+    "reference": "Donation for daily operation:",
     "qrCodePlaceholder": "Scan to donate (Placeholder - Real QR code coming soon)",
     "noQrCode": "Bank transfer only - No QR code available for this account",
     "thankYou": "We thank you in the name of God for your support. Your gift makes a real difference in our ministry."
