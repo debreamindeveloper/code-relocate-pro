@@ -112,7 +112,7 @@ const Events = () => {
                       </div>
                       <div className="space-y-2">
                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <Calendar className="w-4 h-4 text-secondary" />
+                          <Calendar className="w-4 h-4 text-primary" />
                           {new Date(event.eventDate).toLocaleString(
                             i18n.language === "am" ? "en-US" : i18n.language,
                             {
@@ -129,7 +129,7 @@ const Events = () => {
                         </div>
                         {getTranslatedText(event.location) && (
                           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                            <MapPin className="w-4 h-4 text-secondary" />
+                            <MapPin className="w-4 h-4 text-primary" />
                             {getTranslatedText(event.location)}
                           </div>
                         )}
@@ -172,7 +172,7 @@ const Events = () => {
                   </div>
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                      <Calendar className="w-4 h-4 text-secondary" />
+                      <Calendar className="w-4 h-4 text-primary" />
                       {new Date(event.eventDate).toLocaleString(
                         i18n.language === "am" ? "en-US" : i18n.language,
                         {
@@ -189,7 +189,7 @@ const Events = () => {
                     </div>
                     {getTranslatedText(event.location) && (
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                        <MapPin className="w-4 h-4 text-secondary" />
+                        <MapPin className="w-4 h-4 text-primary" />
                         {getTranslatedText(event.location)}
                       </div>
                     )}
