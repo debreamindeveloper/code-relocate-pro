@@ -113,7 +113,19 @@ const Events = () => {
                       <div className="space-y-2">
                         <div className="flex items-center gap-2 text-sm text-muted-foreground">
                           <Calendar className="w-4 h-4 text-secondary" />
-                          {new Date(event.eventDate).toLocaleDateString()}
+                          {new Date(event.eventDate).toLocaleString(
+                            i18n.language === "am" ? "en-US" : i18n.language,
+                            {
+                              weekday: "long",
+                              year: "numeric",
+                              month: "long",
+                              day: "numeric",
+                              hour: "2-digit",
+                              minute: "2-digit",
+                              hour12: false,
+                              timeZone: "UTC",
+                            }
+                          )}
                         </div>
                         {getTranslatedText(event.location) && (
                           <div className="flex items-center gap-2 text-sm text-muted-foreground">
@@ -161,7 +173,19 @@ const Events = () => {
                   <div className="space-y-2">
                     <div className="flex items-center gap-2 text-sm text-muted-foreground">
                       <Calendar className="w-4 h-4 text-secondary" />
-                      {new Date(event.eventDate).toLocaleDateString()}
+                      {new Date(event.eventDate).toLocaleString(
+                        i18n.language === "am" ? "en-US" : i18n.language,
+                        {
+                          weekday: "long",
+                          year: "numeric",
+                          month: "long",
+                          day: "numeric",
+                          hour: "2-digit",
+                          minute: "2-digit",
+                          hour12: false,
+                          timeZone: "UTC",
+                        }
+                      )}
                     </div>
                     {getTranslatedText(event.location) && (
                       <div className="flex items-center gap-2 text-sm text-muted-foreground">
