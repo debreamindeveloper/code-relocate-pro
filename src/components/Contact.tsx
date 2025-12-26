@@ -47,7 +47,7 @@ const Contact = () => {
             </h3>
             <div className="space-y-6">
               <div className="flex items-start gap-4">
-                <MapPin className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
+                <MapPin className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-1">
                     {t("contact.address")}
@@ -61,7 +61,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <Phone className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
+                <Phone className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-1">
                     {t("contact.phone")}
@@ -76,7 +76,7 @@ const Contact = () => {
               </div>
 
               <div className="flex items-start gap-4">
-                <Mail className="w-6 h-6 text-secondary mt-1 flex-shrink-0" />
+                <Mail className="w-6 h-6 text-primary mt-1 flex-shrink-0" />
                 <div>
                   <h4 className="font-semibold text-card-foreground mb-1">
                     {t("contact.email")}
@@ -94,7 +94,7 @@ const Contact = () => {
 
           <Card className="p-8 border-border bg-card">
             <div className="flex items-center gap-3 mb-6">
-              <Clock className="w-6 h-6 text-secondary" />
+              <Clock className="w-6 h-6 text-primary" />
               <h3 className="text-2xl font-bold text-card-foreground">
                 {t("contact.openingHours")}
               </h3>

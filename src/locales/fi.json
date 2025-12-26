@@ -73,112 +73,112 @@
       "name": "Yleiskokous",
       "head": "Kaikki seurakunnan jäsenet",
       "email": "info@teklehaymanot.fi",
-      "phone": "+358 45 1234567"
+      "phone": "+358 45 123 4567"
     },
     "parishCouncil": {
       "name": "Seurakuntaneuvosto",
       "chair": {
         "role": "Puheenjohtaja",
-        "name": "Reverend Fr Lema Besufekad",
+        "name": "Isä Lema Besufekad",
         "email": "lema.besufikad@teklehaymanot.fi",
-        "phone": "+358 40 684226"
+        "phone": "+358 40 684 226"
       },
       "viceChair": {
         "role": "Varapuheenjohtaja",
-        "name": "Aman?? (conflicting names)",
+        "name": "Amare Kassa",
         "email": "amanuel.kebede@teklehaymanot.fi",
-        "phone": "+358 44 5400490"
+        "phone": "+358 44 540 0490"
       },
       "secretary": {
         "role": "Sihteeri",
-        "name": "Father Dr. Alemnew Sheferaw",
+        "name": "Isä Alemnew Sheferaw (PhD)",
         "email": "alemnew.sheferaw@teklehaymanot.fi",
-        "phone": "+358 45 6987878"
+        "phone": "+358 45 698 7878"
       },
       "member": {
         "role": "Jäsen",
-        "name": "Father Eshete Tesfaye",
+        "name": "Isä Eshete Tesfaye",
         "email": "eshete.tesfaye@teklehaymanot.fi",
-        "phone": "+358 44 5119020"
+        "phone": "+358 44 511 9020"
       },
       "financeHead": {
         "role": "Talouspäällikkö",
          "name": "Ephrem Shiferaw",
         "email": "ephrem.shiferaw@teklehaymanot.fi",
-        "phone": "todo"
+        "phone": "+358 40 645 3223"
       },
       "cashier": {
         "role": "Kassanhoitaja",
         "name": "Dawit Solomon",
         "email": "dawit.solomon@teklehaymanot.fi",
-        "phone": "+358 40 7022499"
+        "phone": "+358 40 702 2499"
       },
       "member2": {
         "role": "Jäsen",
         "name": "Dawit Solomon",
         "email": "dawit.solomon@teklehaymanot.fi",
-        "phone": "+358 40 7022499"
+        "phone": "+358 40 702 2499"
       }
     },
     "clergy": {
       "name": "Papistoosasto",
-      "head": "Pastori Alemnew Shiferaw (Dr.)",
+      "head": "Isä Alemnew Shiferaw (Dr.)",
       "email": "alemnew.sheferaw@teklehaymanot.fi",
-      "phone": "+358 45 6987878"
+      "phone": "+358 45 698 7878"
     },
     "sundaySchool": {
       "name": "Pyhäkoulu",
-      "head": "Pastori Eshete Tesfaye",
+      "head": "Isä Eshete Tesfaye",
       "email": "eshete.tesfaye@teklehaymanot.fi",
-      "phone": "+358 44 5119020"
+      "phone": "+358 44 511 9020"
     },
     "gospelService": {
       "name": "Evankeliumipalvelu",
       "head": "Diakoni Getasew Tedla",
       "email": "getasew.tedla@teklehaymanot.fi",
-      "phone": "todo"
+      "phone": "+358 45 858 4829"
     },
     "finance": {
       "name": "Talousosasto",
       "head": "Diakoni Hailay Atsbeha",
       "email": "hailay.atsbeha@teklehaymanot.fi",
-      "phone": "todo"
+      "phone": "+358 44 971 4930"
     },
     "buildingAdministration": {
       "name": "Rakennushallinto",
       "head": "Beselam Gizachew",
       "email": "beselam.asefa@teklehaymanot.fi",
-      "phone": "+358 45 6994599"
+      "phone": "+358 45 699 4599"
     },
     "youth": {
       "name": "Nuorisotoiminta",
       "head": "Meron Eshetu",
       "email": "meron.eshetu@teklehaymanot.fi",
-      "phone": "+358 44 0865272"
+      "phone": "+358 44 086 5272"
     },
     "development": {
       "name": "Kehitystoimikunta",
       "head": "Amit Kahsay",
       "email": "amit.kahsay@teklehaymanot.fi",
-      "phone": "+358 44 9747190"
+      "phone": "+358 44 974 7190"
     },
     "cashier2": {
       "name": "Kassanhoitaja",
       "head": "Ephrem Shiferaw",
       "email": "ephrem.shiferaw@teklehaymanot.fi",
-      "phone": "todo"
+      "phone": "+358 40 645 3223"
     },
     "buildingCommittee": {
       "name": "Rakennustoimikunta",
       "head": "Samuel Yared",
       "email": "samuel.yared@teklehaymanot.fi",
-      "phone": "+358 40 5751516"
+      "phone": "+358 40 575 1516"
     },
     "ict": {
       "name": "IT-osasto",
       "head": "Tewodros Mengesha",
       "email": "tewodros.mengesha@teklehaymanot.fi",
-      "phone": "+358 45 1684822"
+      "phone": "+358 45 168 4822"
     }
   },
   "map": {

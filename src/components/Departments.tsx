@@ -187,21 +187,23 @@ const Departments = () => {
         <div className="space-y-8">
           {/* General Assembly - Top Level */}
           <div className="flex justify-center">
-            <Card className="p-6 bg-primary/5 border-primary/20 border-4 max-w-md w-full">
+            <Card className="p-6 bg-primary/10 border-primary border-[3px] shadow-lg max-w-md w-full">
               <div className="flex items-center gap-3 mb-4">
                 <Users className="w-6 h-6 text-primary" />
-                <h3 className="text-xl font-bold text-card-foreground">
+                <h3 className="text-xl font-bold text-foreground">
                   {generalAssembly.name}
                 </h3>
               </div>
               <div className="space-y-2">
                 <div className="flex items-center gap-2 text-sm">
-                  <User className="w-4 h-4 text-secondary" />
-                  <span className="font-semibold">{generalAssembly.head}</span>
+                  <User className="w-4 h-4 text-primary" />
+                  <span className="font-semibold text-foreground">
+                    {generalAssembly.head}
+                  </span>
                 </div>
                 {generalAssembly.email && (
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Mail className="w-4 h-4 text-secondary" />
+                    <Mail className="w-4 h-4 text-primary" />
                     <a
                       href={`mailto:${generalAssembly.email}`}
                       className="hover:text-primary transition-colors"
@@ -212,7 +214,7 @@ const Departments = () => {
                 )}
                 {generalAssembly.phone && (
                   <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                    <Phone className="w-4 h-4 text-secondary" />
+                    <Phone className="w-4 h-4 text-primary" />
                     <a
                       href={`tel:${generalAssembly.phone}`}
                       className="hover:text-primary transition-colors"
@@ -253,24 +255,24 @@ const Departments = () => {
                     key={index}
                     className="pl-2 md:pl-4 basis-full md:basis-1/3"
                   >
-                    <Card className="p-6 hover:shadow-lg transition-all hover:-translate-y-1 bg-card border-border h-full">
+                    <Card className="p-6 hover:shadow-xl transition-all hover:-translate-y-1 bg-card border-border border-[2px] shadow-md h-full">
                       <div className="mb-4">
-                        <h4 className="text-lg font-bold text-card-foreground">
+                        <h4 className="text-lg font-bold text-foreground">
                           {member.role}
                         </h4>
                       </div>
                       <div className="space-y-3">
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <User className="w-4 h-4 text-secondary" />
+                        <div className="flex items-center gap-2 text-sm">
+                          <User className="w-4 h-4 text-primary" />
                           <div>
-                            <p className="font-semibold text-card-foreground">
+                            <p className="font-semibold text-foreground">
                               {member.name}
                             </p>
                           </div>
                         </div>
                         {member.email && (
-                          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                            <Mail className="w-4 h-4 text-secondary" />
+                          <div className="flex items-center gap-2 text-sm text-foreground">
+                            <Mail className="w-4 h-4 text-primary" />
                             <a
                               href={`mailto:${member.email}`}
                               className="hover:text-primary transition-colors"
@@ -280,8 +282,8 @@ const Departments = () => {
                           </div>
                         )}
                         {member.phone && (
-                          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                            <Phone className="w-4 h-4 text-secondary" />
+                          <div className="flex items-center gap-2 text-sm text-foreground">
+                            <Phone className="w-4 h-4 text-primary" />
                             <a
                               href={`tel:${member.phone}`}
                               className="hover:text-primary transition-colors"
@@ -324,24 +326,24 @@ const Departments = () => {
                     key={dept.id}
                     className="pl-2 md:pl-4 basis-full md:basis-1/3"
                   >
-                    <Card className="p-6 hover:shadow-lg transition-all hover:-translate-y-1 bg-card border-border h-full">
+                    <Card className="p-6 hover:shadow-xl transition-all hover:-translate-y-1 bg-card border-border border-[2px] shadow-md h-full">
                       <div className="mb-4">
-                        <h4 className="text-lg font-bold text-card-foreground">
+                        <h4 className="text-lg font-bold text-foreground">
                           {dept.name}
                         </h4>
                       </div>
                       <div className="space-y-3">
-                        <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                          <User className="w-4 h-4 text-secondary" />
+                        <div className="flex items-center gap-2 text-sm">
+                          <User className="w-4 h-4 text-primary" />
                           <div>
-                            <p className="font-semibold text-card-foreground">
+                            <p className="font-semibold text-foreground">
                               {dept.head}
                             </p>
                           </div>
                         </div>
                         {dept.email && (
-                          <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                            <Mail className="w-4 h-4 text-secondary" />
+                          <div className="flex items-center gap-2 text-sm text-foreground">
+                            <Mail className="w-4 h-4 text-primary" />
                             <a
                               href={`mailto:${dept.email}`}
                               className="hover:text-primary transition-colors"
@@ -352,7 +354,7 @@ const Departments = () => {
                         )}
                         {dept.phone && (
                           <div className="flex items-center gap-2 text-sm text-muted-foreground">
-                            <Phone className="w-4 h-4 text-secondary" />
+                            <Phone className="w-4 h-4 text-primary" />
                             <a
                               href={`tel:${dept.phone}`}
                               className="hover:text-primary transition-colors"
