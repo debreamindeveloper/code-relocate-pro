@@ -54,7 +54,7 @@ const Donate = () => {
                 <p className="text-sm font-semibold text-foreground mb-1">
                   {t("donate.accountHolder")}
                 </p>
-                <p className="text-foreground">Ethiopian Orthodoks</p>
+                <p className="text-foreground">Helsingin Debre Amin Abune Tekle H</p>
               </div>
 
               <div>
@@ -110,7 +110,7 @@ const Donate = () => {
                 <p className="text-sm font-semibold text-foreground mb-1">
                   {t("donate.accountHolder")}
                 </p>
-                <p className="text-foreground">Ethiopian Orthodoks</p>
+                <p className="text-foreground">Helsingin Debre Amin Abune Tekle H</p>
               </div>
 
               <div>
