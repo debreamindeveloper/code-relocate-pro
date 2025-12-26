@@ -210,7 +210,7 @@
     "iban": "IBAN:",
     "bic": "BIC:",
     "accountHolder": "Maksun saaja:",
-    "reference": "Viite:",
+    "reference": "Viesti:",
     "qrCodePlaceholder": "Skannaa lahjoittaaksesi (Paikanpitäjä - Oikea QR-koodi tulossa pian)",
     "noQrCode": "Vain pankkisiirto - Tälle tilille ei ole QR-koodia",
     "thankYou": "Kiitämme Jumalan nimessä tuestasi. Lahjoituksesi on merkityksellinen seurakunnalle"
