@@ -44,6 +44,12 @@ jobs:
         uses: actions/download-artifact@v4
         with:
           name: node-app
+          path: ./deployment
+
+      - name: Verify artifact contents
+        run: |
+          echo "Contents of deployment folder:"
+          ls -la ./deployment
 
       - name: "Deploy to Azure Web App"
         uses: azure/webapps-deploy@v3
@@ -51,5 +57,5 @@ jobs:
         with:
           app-name: "teklehaymanot-website"
           slot-name: "Production"
-          package: .
+          package: ./deployment
           publish-profile: ${{ secrets.AZUREAPPSERVICE_PUBLISHPROFILE_44C9946584B547E18627CE3E55A2D5A9 }}
