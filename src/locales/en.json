@@ -26,7 +26,9 @@
     "paragraph2LinkText": "Click here",
     "paragraph2LinkUrl": "https://teams.microsoft.com/l/file/dummy-pdf-link",
     "paragraph3LinkText": "Administrative Bylaws",
-    "paragraph3LinkUrl": "/src/assets/toWEBP/የተሻሻለው_መተዳደሪያ_ደንብ_ሕዳር_2024.pdf"
+    "paragraph3LinkUrl": "/src/assets/toWEBP/የተሻሻለው_መተዳደሪያ_ደንብ_ሕዳር_2024.pdf",
+    "readMore": "Read More",
+    "readLess": "Read Less"
   },
   "services": {
     "title": "Our Ministries",
