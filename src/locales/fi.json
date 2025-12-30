@@ -26,7 +26,9 @@
     "paragraph2LinkText": "Klikkaa tästä",
     "paragraph2LinkUrl": "https://teams.microsoft.com/l/file/dummy-pdf-link",
     "paragraph3LinkText": "Hallinnolliset ohjeet",
-    "paragraph3LinkUrl": "/src/assets/toWEBP/የተሻሻለው_መተዳደሪያ_ደንብ_ሕዳር_2024.pdf"
+    "paragraph3LinkUrl": "/src/assets/toWEBP/የተሻሻለው_መተዳደሪያ_ደንብ_ሕዳር_2024.pdf",
+    "readMore": "Lue lisää",
+    "readLess": "Lue vähemmän"
   },
   "services": {
     "title": "Palvelumme",
