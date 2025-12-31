@@ -272,7 +272,7 @@ const Departments = () => {
                     <Card className="p-6 hover:shadow-xl transition-all hover:-translate-y-1 bg-card border-border border-[2px] shadow-md h-full">
                       <div className="mb-4">
                         <h4 className="text-lg font-bold text-foreground">
-                          {member.role}
+                          {member.name}
                         </h4>
                       </div>
                       <div className="space-y-3">
@@ -280,7 +280,7 @@ const Departments = () => {
                           <User className="w-4 h-4 text-primary" />
                           <div>
                             <p className="font-semibold text-foreground">
-                              {member.name}
+                              {member.role}
                             </p>
                           </div>
                         </div>
