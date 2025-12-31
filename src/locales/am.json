@@ -129,7 +129,7 @@
       "phone": "+358 45 698 7878"
     },
     "sundaySchool": {
-      "name": "የሰ/ት/ቤት",
+      "name": "ጽጌ ሃይማኖት ሰ/ት/ቤት",
       "head": " ቄሰ ገበዝ እሸቴ ተስፋዬ",
       "email": "eshete.tesfaye@teklehaymanot.fi",
       "phone": "+358 44 511 9020"
@@ -181,6 +181,18 @@
       "head": "አቶ ቴዎድሮስ መኰንን",
       "email": "tewodros.mengesha@teklehaymanot.fi",
       "phone": "+358 45 168 4822"
+    },
+    "auditControl": {
+      "name": "የኦዲትና ቁጥጥር ክፍል",
+      "head": "አቶ ግዛት ቸኮል",
+      "email": "gizat.checkol@teklehaymanot.fi",
+      "phone": "+358 45 605 0055"
+    },
+    "membership": {
+      "name": "የአባላት ክትትል ክፍል",
+      "head": "አቶ ዳዊት ሰለሞን",
+      "email": "dawit.solomon@teklehaymanot.fi",
+      "phone": "+358 40 702 2499"
     }
   },
   "map": {

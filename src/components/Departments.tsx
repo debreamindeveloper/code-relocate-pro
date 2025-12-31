@@ -163,6 +163,20 @@ const Departments = () => {
       email: t("departments.ict.email"),
       phone: t("departments.ict.phone"),
     },
+    {
+      id: 11,
+      name: t("departments.auditControl.name"),
+      head: t("departments.auditControl.head"),
+      email: t("departments.auditControl.email"),
+      phone: t("departments.auditControl.phone"),
+    },
+    {
+      id: 12,
+      name: t("departments.membership.name"),
+      head: t("departments.membership.head"),
+      email: t("departments.membership.email"),
+      phone: t("departments.membership.phone"),
+    },
   ];
 
   const getVisibleSlides = () => {

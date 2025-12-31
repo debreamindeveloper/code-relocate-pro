@@ -129,7 +129,7 @@
       "phone": "+358 45 698 7878"
     },
     "sundaySchool": {
-      "name": "Pyhäkoulu",
+      "name": "Tsige Haymanot Pyhäkoulu",
       "head": "Isä Eshete Tesfaye",
       "email": "eshete.tesfaye@teklehaymanot.fi",
       "phone": "+358 44 511 9020"
@@ -181,6 +181,18 @@
       "head": "Tewodros Mekonnen",
       "email": "tewodros.mengesha@teklehaymanot.fi",
       "phone": "+358 45 168 4822"
+    },
+    "auditControl": {
+      "name": "Tarkastus- ja valvontaosasto",
+      "head": "Gizat Checkol",
+      "email": "gizat.checkol@teklehaymanot.fi",
+      "phone": "+358 45 605 0055"
+    },
+    "membership": {
+      "name": "Jäsenosasto",
+      "head": "Dawit Solomon",
+      "email": "dawit.solomon@teklehaymanot.fi",
+      "phone": "+358 40 702 2499"
     }
   },
   "map": {
