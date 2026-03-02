@@ -99,11 +99,14 @@ export const fetchEvents = async (): Promise<Event[]> => {
 
     const events = await response.json() as Event[];
 
+    const now = new Date();
+
     // Filter out events with invalid dates (0001-01-01 is a default/null date)
+    // and events that are already in the past.
     const validEvents = events.filter(event => {
       const eventDate = new Date(event.eventDate);
       // Check if date is valid and not the default date (year 0001)
-      return !isNaN(eventDate.getTime()) && eventDate.getFullYear() > 1900;
+      return !isNaN(eventDate.getTime()) && eventDate.getFullYear() > 1900 && eventDate >= now;
     });
 
     // Sort by eventDate (ascending - earliest first)
