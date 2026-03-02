@@ -83,7 +83,7 @@
         "role": "Puheenjohtaja",
         "name": "Isä Lema Besufekad",
         "email": "lema.besufikad@teklehaymanot.fi",
-        "phone": "+358 40 684 226"
+        "phone": "+358 40 684 2226"
       },
       "viceChair": {
         "role": "Varapuheenjohtaja",
@@ -105,7 +105,7 @@
       },
       "financeHead": {
         "role": "Talouspäällikkö",
-         "name": "Ephrem Shiferaw",
+        "name": "Ephrem Shiferaw",
         "email": "ephrem.shiferaw@teklehaymanot.fi",
         "phone": "+358 40 645 3223"
       },
@@ -242,4 +242,3 @@
     }
   }
 }
-
