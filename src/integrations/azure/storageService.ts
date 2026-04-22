@@ -5,6 +5,10 @@
 
 import { azureStorageConfig } from './config';
 
+const EVENTS_API_BASE_URL =
+  import.meta.env.VITE_EVENTS_API_BASE_URL ??
+  'https://debramin-events-api-ftdcatd6gzdtcbbj.westeurope-01.azurewebsites.net';
+
 // Types for our data
 export interface OpeningHour {
   dayOfWeek: string;
@@ -16,13 +20,26 @@ export interface OpeningHour {
   rowKey: string;
 }
 
+export interface MultilingualText {
+  en?: string;
+  fi?: string;
+  am?: string;
+}
+
 export interface Event {
-  title: string;
-  description: string;
-  location: string;
+  title: MultilingualText;
+  description: MultilingualText;
+  location: MultilingualText;
   eventDate: string;
   partitionKey: string;
   rowKey: string;
+}
+
+export interface EventInput {
+  title: MultilingualText;
+  description: MultilingualText;
+  location: MultilingualText;
+  eventDate: string;
 }
 
 /**
@@ -54,7 +71,7 @@ const parseConnectionString = (connectionString: string): { accountName: string;
  */
 export const fetchOpeningHours = async (): Promise<OpeningHour[]> => {
   try {
-    const apiUrl = 'https://debramin-events-api-ftdcatd6gzdtcbbj.westeurope-01.azurewebsites.net/api/openinghours';
+    const apiUrl = `${EVENTS_API_BASE_URL}/api/openinghours`;
 
     const response = await fetch(apiUrl, {
       method: 'GET',
@@ -84,7 +101,7 @@ export const fetchOpeningHours = async (): Promise<OpeningHour[]> => {
  */
 export const fetchEvents = async (): Promise<Event[]> => {
   try {
-    const apiUrl = 'https://debramin-events-api-ftdcatd6gzdtcbbj.westeurope-01.azurewebsites.net/api/events';
+    const apiUrl = `${EVENTS_API_BASE_URL}/api/events`;
 
     const response = await fetch(apiUrl, {
       method: 'GET',
@@ -116,6 +133,80 @@ export const fetchEvents = async (): Promise<Event[]> => {
   } catch (error) {
     console.error('Error fetching events from API:', error);
     throw new Error(`Failed to fetch events: ${error instanceof Error ? error.message : 'Unknown error'}`);
+  }
+};
+
+/**
+ * Fetch all events (including past) — admin-only usage.
+ */
+export const fetchAllEvents = async (): Promise<Event[]> => {
+  const apiUrl = `${EVENTS_API_BASE_URL}/api/events`;
+  const response = await fetch(apiUrl, {
+    method: 'GET',
+    headers: { Accept: 'application/json' },
+  });
+  if (!response.ok) {
+    throw new Error(`API error: ${response.status} ${response.statusText}`);
+  }
+  const events = (await response.json()) as Event[];
+  events.sort(
+    (a, b) => new Date(b.eventDate).getTime() - new Date(a.eventDate).getTime(),
+  );
+  return events;
+};
+
+export const createEvent = async (input: EventInput): Promise<Event> => {
+  const response = await fetch(`${EVENTS_API_BASE_URL}/api/events`, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(input),
+  });
+  if (!response.ok) {
+    const text = await response.text().catch(() => '');
+    throw new Error(
+      `Create failed: ${response.status} ${response.statusText}${text ? ` — ${text}` : ''}`,
+    );
+  }
+  return (await response.json()) as Event;
+};
+
+export const updateEvent = async (
+  rowKey: string,
+  input: EventInput,
+): Promise<Event> => {
+  const response = await fetch(
+    `${EVENTS_API_BASE_URL}/api/events/${encodeURIComponent(rowKey)}`,
+    {
+      method: 'PUT',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(input),
+    },
+  );
+  if (!response.ok) {
+    const text = await response.text().catch(() => '');
+    throw new Error(
+      `Update failed: ${response.status} ${response.statusText}${text ? ` — ${text}` : ''}`,
+    );
+  }
+  return (await response.json()) as Event;
+};
+
+export const deleteEvent = async (rowKey: string): Promise<void> => {
+  const response = await fetch(
+    `${EVENTS_API_BASE_URL}/api/events/${encodeURIComponent(rowKey)}`,
+    { method: 'DELETE' },
+  );
+  if (!response.ok) {
+    const text = await response.text().catch(() => '');
+    throw new Error(
+      `Delete failed: ${response.status} ${response.statusText}${text ? ` — ${text}` : ''}`,
+    );
   }
 };
 
