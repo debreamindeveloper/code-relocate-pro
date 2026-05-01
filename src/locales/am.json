@@ -4,6 +4,7 @@
     "about": "ስለ ቤተ ክርስቲያናችን",
     "services": "አገልግሎቶች",
     "events": "ወቅታዊ ኹነቶች",
+    "registrations": "ምዝገባ እና ማመልከቻዎች",
     "contact": "ያግኙን",
     "donate": "አስተዋጽዖ ያድርጉ",
     "churchName": "በፊንላንድ የሄልሲንኪ ደብረ አሚን አቡነ ተክለሃይማኖት ቤተ ክርስቲያን"
@@ -27,8 +28,8 @@
     "paragraph2LinkUrl": "/src/assets/ቃለ ዓዋዲ 2009 ዓ.ም Optimized.pdf",
     "paragraph3LinkText": "መተዳደሪያ ደንብ",
     "paragraph3LinkUrl": "/src/assets/toWEBP/Etiopian_ortodoksisen_kirkon_suomenkielinen_sääntö_26_11_24_.pdf",
-    "readMore": "ተጨማሪ ያንብቡ", 
-    "readLess": "ይሳጥሩ"
+    "readMore": "ተጨማሪ ያንብቡ",
+    "readLess": "ያሳጥሩ"
   },
   "services": {
     "title": "አገልግሎቶቻችን",
@@ -209,6 +210,23 @@
     "verse": "ሁለት ወይም ሦስት በስሜ በሚሰበሰቡበት አኔ በዚያ በመካከላቸው እኖራለሁ። ማቴዎስ 18:20",
     "openingHours": "ቤተ ክርስቲያኑ ክፍት የሚሆንበት ሰዓት",
     "closed": "ዝግ ነው (በቀጠሮ)"
+  },
+  "registrations": {
+    "title": "ምዝገባ እና ማመልከቻዎች",
+    "subtitle": "ከታች ያሉ ቅጾችን ይጠቀሙ",
+    "openForm": "ቅጹን ክፈት",
+    "register": {
+      "title": "የቤተ ክርስቲያን አባልነት ምዝገባ",
+      "description": "በአጥቢያው ለአባልነት ለመመዝገብ ማመልከቻው ያስገቡ።"
+    },
+    "baptism": {
+      "title": "ለክርስትና ጥምቀት አገልግሎት ማመልከቻዎን ያስገቡ",
+      "description": "የክርስትና ቅዱስ ምስጢር ጥያቄ ያቅርቡ።"
+    },
+    "marriage": {
+      "title": "ጋብቻ በቤተክርስቲያኑ ለመፈጸም ማመልከቻ ያስገቡ",
+      "description": "የቅዱስ ጋብቻ አገልግሎት።"
+    }
   },
   "donate": {
     "title": "ቤተ ክርስቲያናችንን ይደግፉ",
