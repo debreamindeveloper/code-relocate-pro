@@ -4,6 +4,7 @@
     "about": "Tietoa kirkosta",
     "services": "Hengelliset palvelut",
     "events": "Tapahtumat",
+    "registrations": "Rekisteröidy",
     "contact": "Ota yhteyttä",
     "donate": "Lahjoita",
     "churchName": "Helsingin Debre Amin Abune Teklehaymanot Kirkko"
@@ -210,6 +211,23 @@
     "openingHours": "Kirkon aukioloajat",
     "closed": "Suljettu"
   },
+  "registrations": {
+  "title": "Ilmoittautumiset ja pyynnöt",
+  "subtitle": "Lähetä pyyntö tai ilmoittaudu verkkolomakkeiden kautta",
+  "openForm": "Avaa lomake",
+  "register": {
+    "title": "Liity seurakunnan jäseneksi",
+    "description": "Ilmoittaudu seurakunnan jäseneksi."
+  },
+  "baptism": {
+    "title": "Kastepyyntö",
+    "description": "Lähetä pyyntö pyhän kasteen sakramenttia varten."
+  },
+  "marriage": {
+    "title": "Avioliiton sakramentti",
+    "description": "Lähetä pyyntö pyhän avioliiton sakramentin toimittamiseksi kirkossamme."
+  }
+},
   "donate": {
     "title": "Tue kirkkoamme",
     "subtitle": "Lahjoituksesi auttavat ylläpitämään yhteisöämme ja vahvistamaan seuraavaa sukupolvea elämään uskossa.",

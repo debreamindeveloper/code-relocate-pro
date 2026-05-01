@@ -4,6 +4,7 @@
     "about": "About",
     "services": "Ministries",
     "events": "Events",
+    "registrations": "Register",
     "contact": "Contact",
     "donate": "Donate",
     "churchName": "Debre Amin Abune Teklehaymanot Church, Helsinki"
@@ -209,6 +210,23 @@
     "verse": "For where two or three gather in my name, there am I with them. - Matthew 18:20",
     "openingHours": "Opening Hours",
     "closed": "Closed"
+  },
+  "registrations": {
+    "title": "Registrations & Requests",
+    "subtitle": "Submit a request or register through our online forms",
+    "openForm": "Open form",
+    "register": {
+      "title": "Become a Member",
+      "description": "Register as a member of the parish."
+    },
+    "baptism": {
+      "title": "Baptism Request",
+      "description": "Submit a request for the Holy Sacrament of Baptism."
+    },
+    "marriage": {
+      "title": "Marriage Service",
+      "description": "Request the Holy Sacrament of Marriage at Our Church."
+    }
   },
   "donate": {
     "title": "Support Our Church",

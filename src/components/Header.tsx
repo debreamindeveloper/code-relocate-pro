@@ -54,6 +54,12 @@ const Header = () => {
               {t("header.events")}
             </button>
             <button
+              onClick={() => scrollToSection("registrations")}
+              className="text-sm font-medium text-foreground hover:text-primary transition-colors"
+            >
+              {t("header.registrations")}
+            </button>
+            <button
               onClick={() => scrollToSection("contact")}
               className="text-sm font-medium text-foreground hover:text-primary transition-colors"
             >
@@ -105,6 +111,12 @@ const Header = () => {
                 className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left py-2"
               >
                 {t("header.events")}
+              </button>
+              <button
+                onClick={() => scrollToSection("registrations")}
+                className="text-sm font-medium text-foreground hover:text-primary transition-colors text-left py-2"
+              >
+                {t("header.registrations")}
               </button>
               <button
                 onClick={() => scrollToSection("contact")}
