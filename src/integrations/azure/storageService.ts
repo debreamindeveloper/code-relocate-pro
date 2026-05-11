@@ -10,9 +10,15 @@ const EVENTS_API_BASE_URL =
   'https://debramin-events-api-ftdcatd6gzdtcbbj.westeurope-01.azurewebsites.net';
 
 // Types for our data
+export interface MultilingualText {
+  en?: string;
+  fi?: string;
+  am?: string;
+}
+
 export interface OpeningHour {
-  dayOfWeek: string;
-  dayName: string;
+  dayOfWeek: number;
+  dayName: MultilingualText;
   openTime: string;
   closeTime: string;
   isClosed: boolean;
@@ -20,10 +26,12 @@ export interface OpeningHour {
   rowKey: string;
 }
 
-export interface MultilingualText {
-  en?: string;
-  fi?: string;
-  am?: string;
+export interface OpeningHourInput {
+  dayOfWeek: number;
+  dayName: MultilingualText;
+  openTime: string;
+  closeTime: string;
+  isClosed: boolean;
 }
 
 export interface Event {
@@ -86,8 +94,7 @@ export const fetchOpeningHours = async (): Promise<OpeningHour[]> => {
 
     const openingHours = await response.json() as OpeningHour[];
 
-    // Sort by dayOfWeek (convert string to number for sorting)
-    openingHours.sort((a, b) => parseInt(a.dayOfWeek) - parseInt(b.dayOfWeek));
+    openingHours.sort((a, b) => a.dayOfWeek - b.dayOfWeek);
 
     return openingHours;
   } catch (error) {
@@ -200,6 +207,77 @@ export const updateEvent = async (
 export const deleteEvent = async (rowKey: string): Promise<void> => {
   const response = await fetch(
     `${EVENTS_API_BASE_URL}/api/events/${encodeURIComponent(rowKey)}`,
+    { method: 'DELETE' },
+  );
+  if (!response.ok) {
+    const text = await response.text().catch(() => '');
+    throw new Error(
+      `Delete failed: ${response.status} ${response.statusText}${text ? ` — ${text}` : ''}`,
+    );
+  }
+};
+
+export const fetchOpeningHour = async (dayOfWeek: number): Promise<OpeningHour> => {
+  const response = await fetch(
+    `${EVENTS_API_BASE_URL}/api/openinghours/${dayOfWeek}`,
+    { headers: { Accept: 'application/json' } },
+  );
+  if (!response.ok) {
+    const text = await response.text().catch(() => '');
+    throw new Error(
+      `API error: ${response.status} ${response.statusText}${text ? ` — ${text}` : ''}`,
+    );
+  }
+  return (await response.json()) as OpeningHour;
+};
+
+export const createOpeningHour = async (
+  input: OpeningHourInput,
+): Promise<OpeningHour> => {
+  const response = await fetch(`${EVENTS_API_BASE_URL}/api/openinghours`, {
+    method: 'POST',
+    headers: {
+      Accept: 'application/json',
+      'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(input),
+  });
+  if (!response.ok) {
+    const text = await response.text().catch(() => '');
+    throw new Error(
+      `Create failed: ${response.status} ${response.statusText}${text ? ` — ${text}` : ''}`,
+    );
+  }
+  return (await response.json()) as OpeningHour;
+};
+
+export const updateOpeningHour = async (
+  dayOfWeek: number,
+  input: OpeningHourInput,
+): Promise<OpeningHour> => {
+  const response = await fetch(
+    `${EVENTS_API_BASE_URL}/api/openinghours/${dayOfWeek}`,
+    {
+      method: 'PUT',
+      headers: {
+        Accept: 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(input),
+    },
+  );
+  if (!response.ok) {
+    const text = await response.text().catch(() => '');
+    throw new Error(
+      `Update failed: ${response.status} ${response.statusText}${text ? ` — ${text}` : ''}`,
+    );
+  }
+  return (await response.json()) as OpeningHour;
+};
+
+export const deleteOpeningHour = async (dayOfWeek: number): Promise<void> => {
+  const response = await fetch(
+    `${EVENTS_API_BASE_URL}/api/openinghours/${dayOfWeek}`,
     { method: 'DELETE' },
   );
   if (!response.ok) {
