@@ -6,6 +6,10 @@
 export { azureStorageConfig, validateAzureConfig } from './config';
 export {
   fetchOpeningHours,
+  fetchOpeningHour,
+  createOpeningHour,
+  updateOpeningHour,
+  deleteOpeningHour,
   fetchEvents,
   fetchAllEvents,
   createEvent,
@@ -15,6 +19,7 @@ export {
 } from './storageService';
 export type {
   OpeningHour,
+  OpeningHourInput,
   Event,
   EventInput,
   MultilingualText,
