@@ -1,13 +1,15 @@
 import { useState } from "react";
 import { useTranslation } from "react-i18next";
 import { ChevronDown, ChevronUp } from "lucide-react";
-import constitutionPdf from "@/assets/ቃለ ዓዋዲ 2009 ዓ.ም Optimized.pdf";
-import bylawsPdf from "@/assets/toWEBP/Etiopian_ortodoksisen_kirkon_suomenkielinen_sääntö_26_11_24_.pdf";
+import constitutionPdf from "@/assets/eotc-qaleawadi.pdf";
+import amharicBylawsPdf from "@/assets/toWEBP/bylaws-amharic.pdf";
+import finnishBylawsPdf from "@/assets/toWEBP/bylaws-finnish.pdf";
 
 const About = () => {
   const { t, i18n } = useTranslation();
   const isAmharic = i18n.language === "am";
   const isFinnish = i18n.language === "fi";
+  const isEnglish = !isAmharic && !isFinnish;
   const [isExpanded, setIsExpanded] = useState(false);
 
   return (
@@ -60,7 +62,7 @@ const About = () => {
             {isAmharic && (
               <div>
                 <a
-                  href={bylawsPdf}
+                  href={amharicBylawsPdf}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:text-primary/80 underline transition-colors ml-1"
@@ -78,10 +80,10 @@ const About = () => {
                 </a>
               </div>
             )}
-            {isFinnish && (
+            {(isFinnish || isEnglish) && (
               <div>
                 <a
-                  href={bylawsPdf}
+                  href={finnishBylawsPdf}
                   target="_blank"
                   rel="noopener noreferrer"
                   className="text-primary hover:text-primary/80 underline transition-colors ml-1"
