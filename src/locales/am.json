@@ -211,6 +211,11 @@
     "openingHours": "ቤተ ክርስቲያኑ ክፍት የሚሆንበት ሰዓት",
     "closed": "ዝግ ነው (በቀጠሮ)"
   },
+  "press": {
+    "eyebrow": "የፕሬስ መግለጫ",
+    "readMore": "ተጨማሪ ያንብቡ",
+    "published": "የታተመበት ቀን"
+  },
   "registrations": {
     "title": "ምዝገባ እና ማመልከቻዎች",
     "subtitle": "ከታች ያሉ ቅጾችን ይጠቀሙ",

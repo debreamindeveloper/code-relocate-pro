@@ -211,6 +211,11 @@
     "openingHours": "Kirkon aukioloajat",
     "closed": "Suljettu"
   },
+  "press": {
+    "eyebrow": "Lehdistötiedote",
+    "readMore": "Lue lisää",
+    "published": "Julkaistu"
+  },
   "registrations": {
   "title": "Ilmoittautumiset ja pyynnöt",
   "subtitle": "Lähetä pyyntö tai ilmoittaudu verkkolomakkeiden kautta",

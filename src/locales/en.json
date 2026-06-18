@@ -211,6 +211,11 @@
     "openingHours": "Opening Hours",
     "closed": "Closed"
   },
+  "press": {
+    "eyebrow": "Press release",
+    "readMore": "Read more",
+    "published": "Published"
+  },
   "registrations": {
     "title": "Registrations & Requests",
     "subtitle": "Submit a request or register through our online forms",
