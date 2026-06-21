@@ -44,6 +44,12 @@ const Departments = () => {
     phone: t("departments.generalAssembly.phone"),
   };
 
+  // Helper function to get photo filename from email
+  const getPhotoFilename = (email: string) => {
+    const username = email.split('@')[0];
+    return `${username}.jpg`;
+  };
+
   const parishCouncil = {
     name: t("departments.parishCouncil.name"),
     members: [
@@ -270,20 +276,26 @@ const Departments = () => {
                     className="pl-2 md:pl-4 basis-full md:basis-1/3"
                   >
                     <Card className="p-6 hover:shadow-xl transition-all hover:-translate-y-1 bg-card border-border border-[2px] shadow-md h-full">
-                      <div className="mb-4">
-                        <h4 className="text-lg font-bold text-foreground">
+                      <div className="mb-4 flex flex-col items-center">
+                        <div className="w-40 h-40 mb-4 rounded-full overflow-hidden bg-gray-200 flex items-center justify-center shadow-lg">
+                          <img
+                            src={`/parish-council/${getPhotoFilename(member.email)}`}
+                            alt={member.name}
+                            className="w-full h-full object-cover"
+                            onError={(e) => {
+                              e.currentTarget.style.display = 'none';
+                              e.currentTarget.parentElement!.innerHTML = '<div class="w-full h-full flex items-center justify-center text-gray-400"><svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path><circle cx="12" cy="7" r="4"></circle></svg></div>';
+                            }}
+                          />
+                        </div>
+                        <h4 className="text-lg font-bold text-foreground text-center">
                           {member.name}
                         </h4>
+                        <p className="text-sm text-muted-foreground text-center mt-1">
+                          {member.role}
+                        </p>
                       </div>
                       <div className="space-y-3">
-                        <div className="flex items-center gap-2 text-sm">
-                          <User className="w-4 h-4 text-primary" />
-                          <div>
-                            <p className="font-semibold text-foreground">
-                              {member.role}
-                            </p>
-                          </div>
-                        </div>
                         {member.email && (
                           <div className="flex items-center gap-2 text-sm text-foreground">
                             <Mail className="w-4 h-4 text-primary" />
