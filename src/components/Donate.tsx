@@ -117,7 +117,7 @@ const Donate = () => {
                 <p className="text-sm font-semibold text-foreground mb-1">
                   {t("donate.reference")}
                 </p>
-                <p className="text-foreground">Building Committee</p>
+                <p className="text-foreground">Church Building Fund </p>
               </div>
             </div>
 
