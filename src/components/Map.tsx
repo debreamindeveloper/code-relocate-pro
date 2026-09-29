@@ -12,8 +12,8 @@ const Map = () => {
   });
 
   const churchLocation = {
-    lat: 60.330772,
-    lng: 25.071342,
+    lat: 60.23466,
+    lng: 25.01203,
   };
 
   if (loadError) {
