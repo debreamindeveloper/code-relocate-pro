@@ -53,9 +53,9 @@ const Contact = () => {
                     {t("contact.address")}
                   </h4>
                   <p className="text-muted-foreground">
-                    Laurintie 145
+                    Liusketie 1
                     <br />
-                    01400 Vantaa, Finland
+                    00710 Helsinki, Finland
                   </p>
                 </div>
               </div>
